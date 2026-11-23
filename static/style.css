@@ -1,0 +1,10 @@
+body{background:#f4f6fb}
+.app-nav{background:linear-gradient(90deg,#1b3a6b,#2a5db0)}
+.stat-card{border:0;border-radius:14px;box-shadow:0 2px 8px rgba(20,40,90,.08)}
+.stat-card .val{font-size:1.9rem;font-weight:700;color:#1b3a6b}
+.stat-card .lbl{color:#6b7587;font-size:.85rem;text-transform:uppercase;letter-spacing:.04em}
+.panel{background:#fff;border-radius:14px;box-shadow:0 2px 8px rgba(20,40,90,.08);padding:1rem 1.2rem}
+.panel h6{font-weight:600;color:#1b3a6b}
+.chart-box{position:relative;height:260px}
+.badge-placed{background:#198754}.badge-not{background:#6c757d}
+@media print{.app-nav,footer,.btn{display:none!important}}

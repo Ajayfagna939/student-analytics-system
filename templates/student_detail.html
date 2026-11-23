@@ -1,0 +1,29 @@
+{% extends "base.html" %}{% block title %}{{ s.name }}{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+ <h3 class="mb-0">{{ s.name }} <small class="text-muted">{{ s.roll_no }}</small></h3>
+ <div><a class="btn btn-outline-secondary" href="{{ url_for('edit_student', sid=s.id) }}">Edit</a>
+ <a class="btn btn-outline-primary" href="{{ url_for('students') }}">Back</a></div>
+</div>
+<div class="row g-3">
+ <div class="col-md-6"><div class="panel h-100"><h6>Profile &amp; academics</h6>
+  <table class="table table-sm mb-0">
+   <tr><th>Course / Batch</th><td>{{ s.course }} / {{ s.batch }}</td></tr><tr><th>Gender</th><td>{{ s.gender }}</td></tr>
+   <tr><th>10th / 12th / Degree</th><td>{{ s.tenth_pct }}% / {{ s.twelfth_pct }}% / {{ s.degree_pct }}%</td></tr>
+   <tr><th>Attendance</th><td>{{ s.attendance }}%</td></tr><tr><th>Backlogs</th><td>{{ s.backlogs }}</td></tr><tr><th>Projects</th><td>{{ s.projects }}</td></tr>
+  </table></div></div>
+ <div class="col-md-6"><div class="panel h-100"><h6>Placement</h6>
+  <p><span class="badge {{ 'badge-placed' if s.placement.status=='Placed' else 'badge-not' }}">{{ s.placement.status }}</span></p>
+  {% if s.placement.status=='Placed' %}<p class="mb-1"><b>Company:</b> {{ s.placement.company }}</p><p><b>Package:</b> {{ s.placement.package_lpa }} LPA</p>{% endif %}
+  <h6 class="mt-3">Internship</h6>
+  <p class="mb-0">{% if s.internship %}{{ s.internship.company }} ({{ s.internship.duration_months }} months){% else %}None recorded{% endif %}</p></div></div>
+ <div class="col-md-6"><div class="panel"><h6>Skills</h6>{% for k in s.skills_list %}<span class="badge text-bg-primary me-1 mb-1">{{ k.skill_name }} <small class="opacity-75">&middot; {{ k.category }}</small></span>{% else %}<span class="text-muted">None</span>{% endfor %}</div></div>
+ <div class="col-md-6"><div class="panel"><h6>Certifications</h6><ul class="mb-0">{% for c in s.certs_list %}<li>{{ c }}</li>{% else %}<li class="text-muted">None</li>{% endfor %}</ul></div></div>
+
+ <div class="col-12"><div class="panel"><div class="d-flex justify-content-between align-items-center mb-2"><h6 class="mb-0">Video interviews</h6>
+  <a class="btn btn-sm btn-primary" href="{{ url_for('interview_record', sid=s.id) }}">&#127909; Take video interview</a></div>
+  {% for i in s.interviews %}<div class="small border-top py-1"><a href="{{ url_for('interview_review', iid=i.id) }}">{{ i.created_at }}</a>
+   &middot; auto score <b>{{ i.auto_score|round(0)|int }}</b>/100 &middot; faculty overall {{ i.fac_overall if i.fac_overall else 'not reviewed' }}</div>
+  {% else %}<span class="text-muted small">No interviews recorded yet.</span>{% endfor %}</div></div>
+</div>
+{% endblock %}

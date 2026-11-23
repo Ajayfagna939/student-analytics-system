@@ -1,0 +1,45 @@
+{% extends "base.html" %}{% block title %}Interview Review{% endblock %}
+{% macro bar(label, val) %}{% if val is not none %}<div class="small mb-2">{{ label }} <b>{{ val|round(0)|int }}</b>/100
+<div class="progress" style="height:8px"><div class="progress-bar" style="width: {{ val }}%"></div></div></div>{% endif %}{% endmacro %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+ <h3 class="mb-0">Interview: {{ iv.name }} <small class="text-muted">{{ iv.roll_no }} &middot; {{ iv.course }} &middot; {{ iv.created_at }}</small></h3>
+ <div><a class="btn btn-outline-primary" href="{{ url_for('student_detail', sid=iv.student_id) }}">Student profile</a>
+  <a class="btn btn-outline-secondary" href="{{ url_for('interviews') }}">All interviews</a></div></div>
+<div class="row g-3">
+ <div class="col-lg-7">
+  <div class="panel mb-3">
+   {% if iv.video_file %}<video class="w-100 rounded bg-dark" controls src="{{ url_for('interview_video', iid=iv.id) }}" style="max-height:400px"></video>
+   {% else %}<div class="text-muted">No video stored for this interview (demo record).</div>{% endif %}
+  </div>
+  <div class="panel"><h6>Transcript</h6>
+   {% for a in answers %}<p class="mb-1 fw-semibold small">Q{{ a.q_no }}. {{ a.question }} <span class="text-muted fw-normal">({{ a.duration_sec|round(0)|int }} s)</span></p>
+   <p class="small">{{ a.answer_text or '(no answer captured)' }}</p>{% endfor %}</div>
+ </div>
+ <div class="col-lg-5">
+  <div class="panel mb-3"><h6>Automatic analysis <span class="badge text-bg-primary">{{ iv.auto_score|round(0)|int }}/100</span></h6>
+   {{ bar('Content (answer completeness)', iv.content_score) }}{{ bar('Technical keywords', iv.technical_score) }}
+   {{ bar('Vocabulary variety', iv.vocab_score) }}{{ bar('Speaking pace', iv.pace_score) }}{{ bar('Fluency (few filler words)', iv.fluency_score) }}
+   <div class="small text-muted">Words: {{ iv.word_count }}{% if iv.wpm %} &middot; {{ iv.wpm }} words/min{% endif %} &middot; fillers: {{ iv.filler_count }} &middot; duration {{ iv.duration_sec|round(0)|int }} s.<br>
+    Rule-based screening aid. Speech-to-text may drop filler words, so fluency can be over-estimated. Faculty rating below is the main assessment.</div></div>
+  <div class="panel mb-3"><h6>Information extracted from the interview</h6>
+   <p class="mb-1 small fw-semibold">Skills mentioned</p>
+   <p>{% for s in ins.skills_detected %}<span class="badge text-bg-primary me-1">{{ s }}</span>{% else %}<span class="text-muted small">None detected</span>{% endfor %}</p>
+   {% if ins.new_skills %}<form method="post" action="{{ url_for('interview_add_skills', iid=iv.id) }}" class="mb-3">
+    <div class="small mb-1">Not yet in profile: {% for s in ins.new_skills %}<span class="badge text-bg-warning me-1">{{ s }}</span>{% endfor %}</div>
+    <button class="btn btn-sm btn-outline-success">Add these skills to profile</button></form>{% endif %}
+   {% for title, key in [('Projects mentioned','projects'),('Career goals','goals'),('Certifications / internships / learning','learning')] %}
+   <p class="mb-1 small fw-semibold">{{ title }}</p>
+   <ul class="small">{% for x in ins.get(key, []) %}<li>&ldquo;{{ x }}&rdquo;</li>{% else %}<li class="text-muted">Nothing detected</li>{% endfor %}</ul>{% endfor %}</div>
+  <div class="panel"><h6>Faculty review</h6>
+   <form method="post" action="{{ url_for('interview_rate', iid=iv.id) }}">
+    {% for k, label in [('fac_comm','Communication'),('fac_tech','Technical knowledge'),('fac_conf','Confidence'),('fac_overall','Overall')] %}
+    <div class="d-flex justify-content-between align-items-center mb-2"><span class="small">{{ label }}</span>
+     <select class="form-select form-select-sm w-auto" name="{{ k }}"><option value="">-</option>{% for n in range(1,6) %}<option {{ 'selected' if iv[k]==n }}>{{ n }}</option>{% endfor %}</select></div>{% endfor %}
+    <textarea class="form-control mb-2" name="fac_comments" rows="2" placeholder="Comments">{{ iv.fac_comments or '' }}</textarea>
+    <button class="btn btn-primary btn-sm">Save review</button></form>
+   <form method="post" action="{{ url_for('interview_delete', iid=iv.id) }}" class="mt-2" onsubmit="return confirm('Delete this interview and its video?')">
+    <button class="btn btn-sm btn-outline-danger">Delete interview</button></form></div>
+ </div>
+</div>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+ <h3 class="mb-0">Analytics Dashboard</h3>
+ <div class="d-flex gap-2">
+  <select id="fCourse" class="form-select form-select-sm"><option value="">All courses</option>{% for c in courses %}<option>{{ c }}</option>{% endfor %}</select>
+  <select id="fBatch" class="form-select form-select-sm"><option value="">All batches</option>{% for b in batches %}<option>{{ b }}</option>{% endfor %}</select>
+ </div>
+</div>
+<div id="empty" class="alert alert-info d-none">No data for this selection. Add students or run <code>python init_db.py</code>.</div>
+<div id="body">
+<div class="row g-3 mb-3">
+ {% for id, lbl in [('total','Students'),('placed','Placed'),('rate','Placement rate %'),('avg_marks','Avg degree %'),('avg_package','Avg package (LPA)'),('max_package','Highest package (LPA)'),('iv_n','Students interviewed'),('iv_avg','Avg interview score')] %}
+ <div class="col-6 col-md-3"><div class="card stat-card p-3"><div class="lbl">{{ lbl }}</div><div class="val" id="k_{{ id }}">-</div></div></div>
+ {% endfor %}
+</div>
+<div class="row g-3">
+ <div class="col-md-4"><div class="panel"><h6>Placement status</h6><div class="chart-box"><canvas id="c_status"></canvas></div></div></div>
+ <div class="col-md-8"><div class="panel"><h6>Placement rate by course (%)</h6><div class="chart-box"><canvas id="c_course"></canvas></div></div></div>
+ <div class="col-md-6"><div class="panel"><h6>Average degree marks by course (%)</h6><div class="chart-box"><canvas id="c_marks"></canvas></div></div></div>
+ <div class="col-md-6"><div class="panel"><h6>Placement rate by marks band (%)</h6><div class="chart-box"><canvas id="c_band"></canvas></div></div></div>
+ <div class="col-md-6"><div class="panel"><h6>Skill distribution: students having each skill</h6><div class="chart-box"><canvas id="c_skills"></canvas></div></div></div>
+ <div class="col-md-6"><div class="panel"><h6>Skill gap view: placement rate of students with each skill (%)</h6><div class="chart-box"><canvas id="c_skillrate"></canvas></div></div></div>
+ <div class="col-md-6"><div class="panel"><h6>Internship vs placement rate (%)</h6><div class="chart-box"><canvas id="c_intern"></canvas></div></div></div>
+ <div class="col-md-6"><div class="panel"><h6>Placement rate by batch (%)</h6><div class="chart-box"><canvas id="c_batch"></canvas></div></div></div>
+ <div class="col-md-6"><div class="panel"><h6>Placement rate by video-interview score band (%)</h6><div class="chart-box"><canvas id="c_ivrate"></canvas></div></div></div>
+ <div class="col-md-6"><div class="panel"><h6>Students by interview score band</h6><div class="chart-box"><canvas id="c_ivcount"></canvas></div></div></div>
+</div></div>
+{% endblock %}
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script>
+const charts = {}, COL = ['#2a5db0','#20a487','#f0a030','#d9534f','#7a5cc7','#17a2b8','#6c757d'];
+const fCourse = document.getElementById('fCourse'), fBatch = document.getElementById('fBatch');
+function draw(id, type, labels, data, label, opts = {}) {
+  if (charts[id]) charts[id].destroy();
+  const multi = type === 'doughnut';
+  charts[id] = new Chart(document.getElementById(id), {
+    type, data: {labels, datasets: [{label, data, backgroundColor: multi ? COL : COL[opts.c || 0], borderColor: COL[opts.c || 0], tension: .3}]},
+    options: Object.assign({responsive: true, maintainAspectRatio: false,
+      plugins: {legend: {display: multi}}, scales: multi ? {} : {y: {beginAtZero: true, max: opts.max}}}, opts.extra || {}) });
+}
+async function load() {
+  const q = new URLSearchParams({course: fCourse.value, batch: fBatch.value});
+  const d = await (await fetch('/api/stats?' + q)).json();
+  document.getElementById('empty').classList.toggle('d-none', !d.empty);
+  document.getElementById('body').classList.toggle('d-none', !!d.empty);
+  if (d.empty) return;
+  for (const k of ['total','placed','rate','avg_marks','avg_package','max_package']) document.getElementById('k_' + k).textContent = d[k];
+  document.getElementById('k_iv_n').textContent = d.interview.n; document.getElementById('k_iv_avg').textContent = d.interview.n ? d.interview.avg : '-';
+  draw('c_status','doughnut',['Placed','Not placed'],[d.placed, d.total - d.placed]);
+  draw('c_course','bar',d.course.labels,d.course.rate,'Placement %',{max:100});
+  draw('c_marks','bar',d.course.labels,d.course.marks,'Avg degree %',{max:100,c:1});
+  draw('c_band','bar',d.marks_band.labels,d.marks_band.rate,'Placement %',{max:100,c:2});
+  draw('c_skills','bar',d.skills.labels,d.skills.count,'Students',{c:4,extra:{indexAxis:'y',scales:{x:{beginAtZero:true}}}});
+  draw('c_skillrate','bar',d.skills.labels,d.skills.rate,'Placement %',{c:3,extra:{indexAxis:'y',scales:{x:{beginAtZero:true,max:100}}}});
+  draw('c_intern','bar',d.internship.labels,d.internship.rate,'Placement %',{max:100,c:5});
+  draw('c_ivrate','bar',d.interview.labels,d.interview.rate,'Placement %',{max:100,c:3});
+  draw('c_ivcount','bar',d.interview.labels,d.interview.count,'Students',{c:4});
+  draw('c_batch','line',d.batch.labels,d.batch.rate,'Placement %',{max:100});
+}
+fCourse.onchange = fBatch.onchange = load; load();
+</script>
+{% endblock %}

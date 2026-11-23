@@ -1,0 +1,33 @@
+{% extends "base.html" %}{% block title %}Prediction{% endblock %}
+{% block content %}
+<h3>Placement Estimation (ML prototype)</h3>
+<div class="alert alert-warning">This is a <b>statistical estimate</b> learned from past records (synthetic demo data by default). It is decision-support only and <b>not a guarantee</b> of placement.</div>
+{% if errors %}<div class="alert alert-danger"><ul class="mb-0">{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul></div>{% endif %}
+<div class="row g-3">
+ <div class="col-lg-6"><form method="post" class="panel">
+  <h6>Enter student attributes</h6><div class="row g-3">
+  {% for f in features %}<div class="col-md-6"><label class="form-label">{{ labels[f] }}{% if f=='has_internship' %} (0 = No, 1 = Yes){% endif %}</label>
+   <input class="form-control" name="{{ f }}" type="number" step="any" value="{{ v.get(f,'') }}" required></div>{% endfor %}
+  </div><button class="btn btn-primary mt-3">Estimate</button></form>
+  {% if result %}<div class="panel mt-3"><h6>Result</h6>
+   <div class="display-6">{{ result.p }}%</div><p class="mb-2">Estimated placement likelihood: <b>{{ result.band }}</b></p>
+   {% if result.tips %}<p class="mb-1 fw-semibold">Suggested focus areas</p><ul class="mb-0">{% for t in result.tips %}<li>{{ t }}</li>{% endfor %}</ul>{% else %}<p class="mb-0 text-success">Profile looks strong on all tracked indicators.</p>{% endif %}</div>{% endif %}
+ </div>
+ <div class="col-lg-6"><div class="panel">
+  <div class="d-flex justify-content-between align-items-center"><h6 class="mb-0">Model evaluation (held-out 20% test set)</h6>
+  <form method="post" action="{{ url_for('retrain') }}"><button class="btn btn-sm btn-outline-primary">Train / Retrain model</button></form></div>
+  {% if metrics %}
+  <p class="small text-muted mt-2">Selected model: <b>{{ metrics.best_model }}</b> &middot; train {{ metrics.n_train }} / test {{ metrics.n_test }} records</p>
+  <table class="table table-sm"><thead><tr><th>Model</th><th>Accuracy</th><th>Precision</th><th>Recall</th><th>F1</th><th>CV F1</th></tr></thead><tbody>
+  {% for n, r in metrics.results.items() %}<tr><td>{{ n }}</td><td>{{ r.accuracy }}</td><td>{{ r.precision }}</td><td>{{ r.recall }}</td><td>{{ r.f1 }}</td><td>{{ r.cv_f1 }}</td></tr>{% endfor %}</tbody></table>
+  {% set b = metrics.results[metrics.best_model] %}
+  <p class="mb-1 fw-semibold">Confusion matrix ({{ metrics.best_model }})</p>
+  <table class="table table-bordered table-sm w-auto text-center"><tr><th></th><th>Pred: Not placed</th><th>Pred: Placed</th></tr>
+   <tr><th>Actual: Not placed</th><td>{{ b.confusion[0][0] }}</td><td>{{ b.confusion[0][1] }}</td></tr>
+   <tr><th>Actual: Placed</th><td>{{ b.confusion[1][0] }}</td><td>{{ b.confusion[1][1] }}</td></tr></table>
+  <p class="mb-1 fw-semibold">Feature influence</p>
+  {% for k, val in b.importance.items()|sort(attribute='1', reverse=true) %}<div class="small mb-1">{{ k }}<div class="progress" style="height:8px"><div class="progress-bar" style="width: {{ (val*100)|round(0) }}%"></div></div></div>{% endfor %}
+  {% else %}<p class="text-muted mt-3">No model yet. Click <b>Train / Retrain model</b>.</p>{% endif %}
+ </div></div>
+</div>
+{% endblock %}

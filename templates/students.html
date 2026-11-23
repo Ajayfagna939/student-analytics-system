@@ -1,0 +1,34 @@
+{% extends "base.html" %}{% block title %}Students{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+ <h3 class="mb-0">Students <span class="text-muted fs-6">({{ total }} found)</span></h3>
+ <a class="btn btn-primary" href="{{ url_for('add_student') }}">+ Add Student</a>
+</div>
+<form class="panel mb-3 row g-2" method="get">
+ <div class="col-md-3"><input class="form-control" name="q" placeholder="Search name / roll no" value="{{ f.q }}"></div>
+ <div class="col-md-2"><select class="form-select" name="course"><option value="">All courses</option>{% for c in courses %}<option {{ 'selected' if c==f.course }}>{{ c }}</option>{% endfor %}</select></div>
+ <div class="col-md-2"><select class="form-select" name="batch"><option value="">All batches</option>{% for b in batches %}<option {{ 'selected' if b|string==f.batch }}>{{ b }}</option>{% endfor %}</select></div>
+ <div class="col-md-2"><select class="form-select" name="status"><option value="">Any status</option>{% for s in ['Placed','Not Placed'] %}<option {{ 'selected' if s==f.status }}>{{ s }}</option>{% endfor %}</select></div>
+ <div class="col-md-2"><input class="form-control" name="skill" placeholder="Skill e.g. Python" value="{{ f.skill }}"></div>
+ <div class="col-md-1 d-grid"><button class="btn btn-outline-primary">Filter</button></div>
+</form>
+<div class="panel p-0 table-responsive">
+<table class="table table-hover align-middle mb-0">
+ <thead class="table-light"><tr><th>Roll no</th><th>Name</th><th>Course</th><th>Batch</th><th>Degree %</th><th>Attend. %</th><th>Status</th><th>Company</th><th>LPA</th><th></th></tr></thead>
+ <tbody>
+ {% for r in rows %}
+ <tr><td>{{ r.roll_no }}</td><td><a href="{{ url_for('student_detail', sid=r.id) }}">{{ r.name }}</a></td><td>{{ r.course }}</td><td>{{ r.batch }}</td>
+  <td>{{ r.degree_pct }}</td><td>{{ r.attendance }}</td>
+  <td><span class="badge {{ 'badge-placed' if r.status=='Placed' else 'badge-not' }}">{{ r.status }}</span></td>
+  <td>{{ r.company or '-' }}</td><td>{{ r.package_lpa if r.package_lpa else '-' }}</td>
+  <td class="text-nowrap"><a class="btn btn-sm btn-outline-secondary" href="{{ url_for('edit_student', sid=r.id) }}">Edit</a>
+   <form method="post" action="{{ url_for('delete_student', sid=r.id) }}" class="d-inline" onsubmit="return confirm('Delete this student?')"><button class="btn btn-sm btn-outline-danger">Delete</button></form></td></tr>
+ {% else %}<tr><td colspan="10" class="text-center text-muted py-4">No students match.</td></tr>{% endfor %}
+ </tbody></table></div>
+<nav class="mt-3 d-flex justify-content-between align-items-center">
+ <span class="text-muted small">Page {{ page }} of {{ pages }}</span>
+ <div class="btn-group">
+  <a class="btn btn-outline-secondary btn-sm {{ 'disabled' if page<=1 }}" href="{{ url_for('students', page=page-1, **args) }}">&laquo; Prev</a>
+  <a class="btn btn-outline-secondary btn-sm {{ 'disabled' if page>=pages }}" href="{{ url_for('students', page=page+1, **args) }}">Next &raquo;</a>
+ </div></nav>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}{% block title %}{{ mode }} Student{% endblock %}
+{% macro inp(name, label, type='text', step=None, req=True) %}
+<div class="col-md-3"><label class="form-label">{{ label }}{% if req %} *{% endif %}</label>
+<input class="form-control" name="{{ name }}" type="{{ type }}" {% if step %}step="{{ step }}"{% endif %} value="{{ v.get(name, '') }}"></div>
+{% endmacro %}
+{% block content %}
+<h3>{{ mode }} Student</h3>
+{% if errors %}<div class="alert alert-danger"><ul class="mb-0">{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul></div>{% endif %}
+<form method="post" action="{{ action }}" class="panel">
+ <h6>Profile</h6>
+ <div class="row g-3 mb-3">
+  {{ inp('roll_no','Roll number') }}{{ inp('name','Full name') }}
+  <div class="col-md-3"><label class="form-label">Gender</label><select class="form-select" name="gender">{% for g in ['Male','Female','Other'] %}<option {{ 'selected' if v.get('gender')==g }}>{{ g }}</option>{% endfor %}</select></div>
+  <div class="col-md-3"><label class="form-label">Course *</label><input class="form-control" name="course" list="courseList" value="{{ v.get('course','') }}"><datalist id="courseList">{% for c in courses %}<option value="{{ c }}">{% endfor %}</datalist></div>
+  {{ inp('batch','Batch (year)','number','1') }}
+ </div>
+ <h6>Academic records</h6>
+ <div class="row g-3 mb-3">
+  {{ inp('tenth_pct','10th %','number','0.1') }}{{ inp('twelfth_pct','12th %','number','0.1') }}{{ inp('degree_pct','Degree %','number','0.1') }}{{ inp('attendance','Attendance %','number','0.1') }}
+  {{ inp('backlogs','Backlogs','number','1') }}{{ inp('projects','Projects done','number','1') }}
+ </div>
+ <h6>Skills, certifications &amp; internship</h6>
+ <div class="row g-3 mb-3">
+  <div class="col-md-6"><label class="form-label">Skills (comma separated)</label><input class="form-control" name="skills" value="{{ v.get('skills','') }}" placeholder="Python, SQL, Power BI"></div>
+  <div class="col-md-6"><label class="form-label">Certifications (comma separated)</label><input class="form-control" name="certs" value="{{ v.get('certs','') }}" placeholder="Python (Coursera), SQL (HackerRank)"></div>
+  {{ inp('intern_company','Internship company',req=False) }}{{ inp('intern_months','Duration (months)','number','1',req=False) }}
+ </div>
+ <h6>Placement</h6>
+ <div class="row g-3 mb-3">
+  <div class="col-md-3"><label class="form-label">Status</label><select class="form-select" name="status">{% for s in ['Not Placed','Placed'] %}<option {{ 'selected' if v.get('status')==s }}>{{ s }}</option>{% endfor %}</select></div>
+  {{ inp('company','Company (if placed)',req=False) }}{{ inp('package_lpa','Package (LPA)','number','0.1',req=False) }}
+ </div>
+ <button class="btn btn-primary">Save</button> <a class="btn btn-outline-secondary" href="{{ url_for('students') }}">Cancel</a>
+</form>
+{% endblock %}

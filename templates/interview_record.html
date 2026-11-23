@@ -1,0 +1,121 @@
+{% extends "base.html" %}{% block title %}Video Interview{% endblock %}
+{% block content %}
+<h3>Video Interview <small class="text-muted">{{ s.name }} ({{ s.roll_no }})</small></h3>
+<div class="row g-3">
+ <div class="col-lg-7"><div class="panel">
+  <video id="preview" autoplay muted playsinline class="w-100 rounded bg-dark" style="max-height:400px"></video>
+  <div id="status" class="small text-muted mt-2">Camera is off.</div>
+ </div></div>
+ <div class="col-lg-5">
+  <div class="panel" id="step1">
+   <h6>Before you start</h6>
+   <ul class="small">
+    <li>You will answer {{ questions|length }} questions on camera (about 1 minute each).</li>
+    <li>Use Chrome or Edge for automatic speech-to-text. In other browsers you can type your answers at the review step.</li>
+    <li>The video and transcript are stored for faculty review only.</li>
+    <li>Scores are a screening aid; they are not a final judgement of the student.</li>
+   </ul>
+   <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="consent">
+    <label class="form-check-label" for="consent">I agree to be recorded for this interview.</label></div>
+   <button class="btn btn-primary" id="btnCam" disabled>Start camera</button>
+  </div>
+  <div class="panel d-none" id="step2">
+   <h6>Camera ready</h6><p class="small">Check your face and lighting, then begin. Speak clearly and look at the camera.</p>
+   <button class="btn btn-success" id="btnStart">Start interview</button>
+  </div>
+  <div class="panel d-none" id="step3">
+   <div class="d-flex justify-content-between"><span class="badge text-bg-danger">&#9679; Recording</span><span id="timer" class="fw-semibold">00:00</span></div>
+   <p class="small text-muted mt-2 mb-1" id="qnum"></p>
+   <h5 id="qtext"></h5>
+   <div class="small text-muted">Live transcript</div>
+   <div id="live" class="border rounded p-2 bg-light small" style="min-height:90px"></div>
+   <button class="btn btn-primary mt-3" id="btnNext">Next question</button>
+  </div>
+  <div class="panel d-none" id="step4">
+   <h6>Review your transcript</h6>
+   <p class="small text-muted">Correct any wrong words (or type your answers if speech-to-text was unavailable), then submit.</p>
+   <div id="answers"></div>
+   <button class="btn btn-success" id="btnSubmit">Submit interview</button>
+   <div id="err" class="text-danger small mt-2"></div>
+  </div>
+ </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+const QUESTIONS = {{ questions|tojson }};
+const SUBMIT_URL = "{{ url_for('interview_submit', sid=s.id) }}";
+const $ = id => document.getElementById(id), show = id => ['step1','step2','step3','step4'].forEach(s => $(s).classList.toggle('d-none', s !== id));
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let stream, recorder, chunks = [], idx = 0, answers = [], recog = null, recording = false, speechOK = false, qStart = 0, tick = null, blob = null;
+
+$('consent').onchange = e => $('btnCam').disabled = !e.target.checked;
+$('btnCam').onclick = async () => {
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({video: {width: 640, height: 480}, audio: true});
+    $('preview').srcObject = stream; $('status').textContent = 'Camera and microphone are on.'; show('step2');
+  } catch (e) { $('status').textContent = 'Could not access camera/microphone: ' + e.message + ' (allow permission in the browser and open the site as http://127.0.0.1:5000)'; }
+};
+function startSpeech() {
+  if (!SR) return;
+  recog = new SR(); recog.lang = 'en-IN'; recog.continuous = true; recog.interimResults = true;
+  let finalText = '';
+  recog.onresult = e => {
+    let interim = '';
+    for (let i = e.resultIndex; i < e.results.length; i++) {
+      const r = e.results[i];
+      if (r.isFinal) finalText += r[0].transcript + ' '; else interim += r[0].transcript;
+    }
+    $('live').textContent = finalText + interim; speechOK = true;
+  };
+  recog.onend = () => { if (recording) { try { recog.start(); } catch (e) {} } };
+  recog.onerror = () => {};
+  recog.resetText = () => { finalText = ''; $('live').textContent = ''; };
+  try { recog.start(); } catch (e) {}
+}
+$('btnStart').onclick = () => {
+  const types = ['video/webm;codecs=vp9,opus', 'video/webm;codecs=vp8,opus', 'video/webm', 'video/mp4'];
+  const mime = types.find(t => window.MediaRecorder && MediaRecorder.isTypeSupported(t)) || '';
+  recorder = new MediaRecorder(stream, mime ? {mimeType: mime} : undefined);
+  recorder.ondataavailable = e => { if (e.data && e.data.size) chunks.push(e.data); };
+  recorder.start(1000); recording = true; startSpeech(); show('step3'); showQuestion();
+};
+function showQuestion() {
+  $('qnum').textContent = 'Question ' + (idx + 1) + ' of ' + QUESTIONS.length;
+  $('qtext').textContent = QUESTIONS[idx];
+  $('btnNext').textContent = idx === QUESTIONS.length - 1 ? 'Finish interview' : 'Next question';
+  qStart = Date.now(); clearInterval(tick);
+  tick = setInterval(() => { const s = Math.floor((Date.now() - qStart) / 1000);
+    $('timer').textContent = String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); }, 500);
+}
+$('btnNext').onclick = () => {
+  answers.push({question: QUESTIONS[idx], text: $('live').textContent.trim(), duration: (Date.now() - qStart) / 1000});
+  idx++; if (recog && recog.resetText) recog.resetText();
+  if (idx < QUESTIONS.length) { showQuestion(); return; }
+  clearInterval(tick); recording = false; if (recog) { try { recog.stop(); } catch (e) {} }
+  recorder.onstop = () => {
+    blob = new Blob(chunks, {type: recorder.mimeType || 'video/webm'});
+    stream.getTracks().forEach(t => t.stop());
+    const v = $('preview'); v.srcObject = null; v.muted = false; v.controls = true; v.src = URL.createObjectURL(blob);
+    $('status').textContent = 'Recording finished. Review and submit below.';
+    $('answers').innerHTML = answers.map((a, i) => '<label class="small fw-semibold mt-2">Q' + (i + 1) + '. ' + a.question +
+      '</label><textarea class="form-control mb-2" rows="3" id="ans' + i + '"></textarea>').join('');
+    answers.forEach((a, i) => $('ans' + i).value = a.text);
+    show('step4');
+  };
+  recorder.stop();
+};
+$('btnSubmit').onclick = async () => {
+  $('btnSubmit').disabled = true; $('err').textContent = 'Uploading... please wait.';
+  const out = answers.map((a, i) => ({question: a.question, text: $('ans' + i).value, duration: a.duration}));
+  const fd = new FormData();
+  fd.append('video', blob, 'interview.' + (blob.type.includes('mp4') ? 'mp4' : 'webm'));
+  fd.append('answers', JSON.stringify(out)); fd.append('speech', speechOK ? 'true' : 'false'); fd.append('consent', 'yes');
+  try {
+    const r = await fetch(SUBMIT_URL, {method: 'POST', body: fd});
+    const d = await r.json().catch(() => ({error: 'Server error (' + r.status + ')'}));
+    if (d.ok) location.href = d.redirect; else { $('err').textContent = d.error || 'Upload failed.'; $('btnSubmit').disabled = false; }
+  } catch (e) { $('err').textContent = 'Upload failed: ' + e.message; $('btnSubmit').disabled = false; }
+};
+</script>
+{% endblock %}

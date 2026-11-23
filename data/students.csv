@@ -1,0 +1,301 @@
+roll_no,name,gender,course,batch,tenth_pct,twelfth_pct,degree_pct,attendance,backlogs,projects,skills,certifications,internship_company,internship_months,placement_status,company,package_lpa
+MVN2023001,Mohit Yadav,Male,BCA,2023,72.6,78.5,75.0,95.2,0,1,Flask;SQL;C++;Excel;Java;Power BI,Git & GitHub (Simplilearn);SQL Basics (HackerRank),,0,Placed,Cognizant,4.8
+MVN2023002,Rohan Kumar,Male,BCA,2023,69.3,77.4,77.7,75.4,0,2,React;SQL;Machine Learning,Git & GitHub (Simplilearn);Machine Learning (Coursera),,0,Not Placed,,0
+MVN2026003,Komal Singh,Female,BCA (AI & ML),2026,68.4,61.9,52.8,83.1,0,1,Machine Learning;Git;AWS;Python;C++;React;HTML/CSS;JavaScript;Excel,Web Development (Udemy),TechNova Solutions,6,Placed,Zoho,2.5
+MVN2023004,Neha Tiwari,Female,B.Sc IT,2023,74.7,57.8,67.7,74.6,0,1,Machine Learning;Git;Python;Excel;Flask;Aptitude;Java,AWS Cloud Practitioner;SQL Basics (HackerRank);Java Programming (NPTEL);Power BI Essentials (Microsoft),,0,Placed,Accenture,6.2
+MVN2025005,Deepak Gupta,Male,MCA,2025,71.1,66.0,64.0,98.5,0,2,C++;Python;Power BI;SQL;JavaScript,Machine Learning (Coursera);SQL Basics (HackerRank);Git & GitHub (Simplilearn);Power BI Essentials (Microsoft),PixelSoft,3,Placed,TCS,5.7
+MVN2024006,Mohit Jain,Male,B.Sc IT,2024,76.1,52.4,57.8,66.7,3,3,React;Power BI;JavaScript;Excel;Communication;Git;Java,Power BI Essentials (Microsoft);Machine Learning (Coursera),CloudNest,6,Not Placed,,0
+MVN2025007,Sahil Mehta,Male,MCA,2025,75.7,70.8,77.4,77.0,0,1,Power BI;AWS;Git;Communication;Python,Python for Everybody (Coursera),,0,Not Placed,,0
+MVN2026008,Neha Mehta,Female,B.Sc IT,2026,77.4,54.4,80.6,83.2,0,4,React;Communication;Data Analysis,Web Development (Udemy);Machine Learning (Coursera);Git & GitHub (Simplilearn),PixelSoft,6,Placed,TCS,4.6
+MVN2024009,Sneha Saini,Female,B.Sc IT,2024,80.1,82.3,63.2,89.3,1,0,Flask;Excel;Machine Learning;AWS,AWS Cloud Practitioner,,0,Not Placed,,0
+MVN2026010,Sneha Bansal,Female,B.Sc IT,2026,77.3,81.8,66.9,75.2,0,1,JavaScript;Machine Learning;Flask;Java;Python,Power BI Essentials (Microsoft);Git & GitHub (Simplilearn);AWS Cloud Practitioner,,0,Not Placed,,0
+MVN2023011,Rahul Chauhan,Male,B.Tech CSE,2023,87.6,71.3,78.1,90.0,0,3,Communication;Machine Learning;JavaScript;Aptitude;Python;Power BI;Java;Git,Web Development (Udemy);SQL Basics (HackerRank);Power BI Essentials (Microsoft),PixelSoft,6,Placed,Cognizant,5.8
+MVN2023012,Deepak Kumar,Male,B.Sc IT,2023,73.6,87.6,85.4,53.8,0,1,SQL;AWS;Power BI;JavaScript,Git & GitHub (Simplilearn);Machine Learning (Coursera);SQL Basics (HackerRank),PixelSoft,2,Placed,Tech Mahindra,4.8
+MVN2023013,Deepak Chauhan,Male,MCA,2023,71.0,72.9,70.9,60.1,2,1,Aptitude;Python;Java;HTML/CSS;JavaScript;SQL;Communication,SQL Basics (HackerRank),InfoBridge,6,Placed,Capgemini,2.5
+MVN2023014,Karan Bansal,Male,MCA,2023,65.9,67.0,64.8,89.2,1,1,JavaScript;Power BI;Flask;Machine Learning,,,0,Not Placed,,0
+MVN2026015,Deepak Kumar,Male,BCA (AI & ML),2026,83.7,65.0,71.0,76.7,0,2,Data Analysis;React;Power BI;AWS;HTML/CSS,Git & GitHub (Simplilearn),DataWorks,2,Placed,Capgemini,3.4
+MVN2024016,Arjun Jain,Male,BCA,2024,74.1,69.7,72.6,65.8,0,1,Python;Data Analysis;Machine Learning;SQL;Communication;Git;Aptitude,,,0,Not Placed,,0
+MVN2024017,Rohan Saini,Male,BCA,2024,78.0,90.9,68.4,81.7,0,4,Power BI;Java,Java Programming (NPTEL);Data Analytics (Google),CloudNest,2,Not Placed,,0
+MVN2026018,Ritu Rana,Female,BCA (AI & ML),2026,74.6,96.6,69.7,78.1,0,2,AWS;SQL;Java;Aptitude;Power BI;React;HTML/CSS;Excel;Machine Learning,Python for Everybody (Coursera),,0,Placed,Deloitte,5.1
+MVN2023019,Komal Gupta,Female,BCA,2023,81.5,79.9,81.4,70.9,0,2,Power BI;Git;AWS;Java;SQL;Excel;Aptitude;Machine Learning,AWS Cloud Practitioner,PixelSoft,6,Placed,Accenture,6.2
+MVN2024020,Mohit Verma,Male,BCA,2024,64.1,66.3,91.9,81.0,0,0,SQL;Python;Power BI;Machine Learning;Communication;Java;Aptitude;C++;React,Machine Learning (Coursera),,0,Placed,Cognizant,6.5
+MVN2023021,Ananya Singh,Female,BCA (AI & ML),2023,74.7,61.4,54.5,84.7,0,1,Python;React;JavaScript;Git;Flask;AWS;Communication;Machine Learning,Data Analytics (Google);Power BI Essentials (Microsoft),PixelSoft,2,Not Placed,,0
+MVN2023022,Nikhil Mehta,Male,MCA,2023,82.1,59.7,66.8,82.3,0,1,Power BI;Python,,CloudNest,2,Placed,Accenture,4.4
+MVN2023023,Sahil Malik,Male,MCA,2023,81.8,59.6,72.6,66.8,0,3,HTML/CSS;Java;Data Analysis,,,0,Not Placed,,0
+MVN2026024,Nikhil Jain,Male,BCA,2026,67.2,74.3,73.5,82.9,0,1,Java;Data Analysis;Aptitude;React;Power BI,Git & GitHub (Simplilearn);Web Development (Udemy),,0,Not Placed,,0
+MVN2024025,Arjun Jain,Male,B.Sc IT,2024,78.7,60.1,88.7,86.6,0,1,Machine Learning;React;C++;Power BI;Git,Web Development (Udemy),,0,Placed,TCS,6.2
+MVN2023026,Mohit Malik,Male,BCA,2023,83.6,76.1,61.8,88.2,0,1,SQL;Java;Machine Learning;Aptitude;AWS;JavaScript;C++;HTML/CSS;Communication,Web Development (Udemy);Java Programming (NPTEL);SQL Basics (HackerRank),InfoBridge,3,Placed,Zoho,3.3
+MVN2023027,Aditya Jain,Male,MCA,2023,65.8,71.2,61.1,83.4,2,2,SQL;Communication;C++;JavaScript;Java;Excel,Power BI Essentials (Microsoft);Java Programming (NPTEL),DataWorks,2,Not Placed,,0
+MVN2025028,Kavya Verma,Female,BCA (AI & ML),2025,71.4,99.0,84.5,86.3,0,0,Aptitude;JavaScript;AWS;Python;Java;Power BI,Java Programming (NPTEL),PixelSoft,3,Placed,HCL,5.8
+MVN2024029,Kavya Yadav,Female,B.Sc IT,2024,78.8,69.8,59.3,87.1,0,4,Communication;Machine Learning;Excel;React,SQL Basics (HackerRank);Git & GitHub (Simplilearn),,0,Placed,HCL,4.5
+MVN2024030,Vivaan Bansal,Male,MCA,2024,65.5,56.9,69.3,75.5,0,2,Excel;Data Analysis,AWS Cloud Practitioner;Power BI Essentials (Microsoft),DataWorks,3,Placed,Wipro,5.2
+MVN2023031,Rahul Chauhan,Male,B.Sc IT,2023,77.9,63.2,71.7,81.5,0,4,Flask;Power BI;Java;HTML/CSS;Machine Learning,AWS Cloud Practitioner;Power BI Essentials (Microsoft);SQL Basics (HackerRank),,0,Placed,HCL,6.3
+MVN2024032,Sneha Jain,Female,B.Tech CSE,2024,77.6,77.6,58.6,90.8,0,1,HTML/CSS;Excel,AWS Cloud Practitioner;Machine Learning (Coursera);Power BI Essentials (Microsoft);SQL Basics (HackerRank),,0,Placed,Wipro,4.9
+MVN2023033,Priya Bansal,Female,B.Tech CSE,2023,79.1,77.2,75.2,100.0,1,2,Aptitude;SQL,,,0,Not Placed,,0
+MVN2025034,Manish Gupta,Male,B.Sc IT,2025,70.8,79.6,76.5,72.3,0,0,Flask;Python;Power BI;SQL;React,SQL Basics (HackerRank),,0,Not Placed,,0
+MVN2025035,Komal Verma,Female,B.Sc IT,2025,55.3,78.9,93.1,63.9,0,0,Power BI;Python;Java;JavaScript;C++;Data Analysis;Git;Communication,,CodeCraft Labs,3,Placed,Accenture,6.1
+MVN2026036,Mohit Gupta,Male,MCA,2026,74.6,61.2,80.9,72.8,0,0,Git;Communication;Data Analysis,,CloudNest,6,Placed,TCS,6.0
+MVN2023037,Aarav Jain,Male,MCA,2023,67.5,93.4,70.5,86.3,0,4,Excel;React;Java;Power BI;HTML/CSS,SQL Basics (HackerRank);Java Programming (NPTEL),,0,Not Placed,,0
+MVN2026038,Sahil Singh,Male,B.Sc IT,2026,67.4,80.5,71.9,72.1,0,4,Data Analysis;Machine Learning;C++;SQL;React;Power BI;Excel;AWS,Java Programming (NPTEL);AWS Cloud Practitioner,,0,Placed,Wipro,4.5
+MVN2023039,Sneha Rana,Female,B.Sc IT,2023,82.7,60.0,75.0,76.7,0,1,React;Aptitude;Git;Data Analysis;AWS;Power BI,Data Analytics (Google),DataWorks,2,Placed,Tech Mahindra,3.4
+MVN2026040,Komal Rana,Female,BCA (AI & ML),2026,61.4,81.2,74.0,100.0,0,1,Data Analysis;Machine Learning;Power BI,Web Development (Udemy);SQL Basics (HackerRank),,0,Placed,Infosys,4.5
+MVN2024041,Rohan Malik,Male,B.Sc IT,2024,66.9,76.4,82.7,87.7,0,0,React;C++;Python;AWS;SQL,SQL Basics (HackerRank);Data Analytics (Google);Machine Learning (Coursera);Web Development (Udemy),,0,Not Placed,,0
+MVN2026042,Pooja Tiwari,Female,B.Tech CSE,2026,71.5,59.5,59.8,96.3,0,0,Flask;C++;Power BI;Excel;Python;Java;React;SQL,,,0,Not Placed,,0
+MVN2026043,Pooja Mehta,Female,BCA,2026,59.6,83.6,84.4,80.1,0,1,SQL;Flask;C++;Git;Communication,Git & GitHub (Simplilearn);Web Development (Udemy),,0,Placed,HCL,4.7
+MVN2026044,Simran Mehta,Female,MCA,2026,74.7,68.1,64.0,81.1,0,2,Communication;Aptitude;C++;Excel;Flask;Git;JavaScript;SQL,Java Programming (NPTEL);Data Analytics (Google);Web Development (Udemy),TechNova Solutions,6,Placed,TCS,3.4
+MVN2023045,Isha Singh,Female,B.Sc IT,2023,54.5,70.5,91.3,85.9,3,4,Machine Learning;HTML/CSS;Communication;Aptitude;Java,,PixelSoft,2,Placed,Accenture,5.3
+MVN2024046,Aarav Chauhan,Male,BCA,2024,71.9,67.1,63.8,74.1,0,2,AWS;HTML/CSS;Machine Learning;Flask;React;Python;SQL;Excel,Python for Everybody (Coursera),,0,Placed,Deloitte,2.7
+MVN2026047,Rahul Sharma,Male,B.Tech CSE,2026,77.1,80.1,79.0,86.3,0,1,Excel;JavaScript,AWS Cloud Practitioner;Machine Learning (Coursera);Data Analytics (Google),PixelSoft,6,Placed,TCS,5.1
+MVN2026048,Mohit Saini,Male,BCA,2026,73.8,73.2,76.1,92.8,0,4,Power BI;Aptitude;Communication;Git;React;C++;Flask;AWS,Git & GitHub (Simplilearn);Python for Everybody (Coursera);Machine Learning (Coursera);Java Programming (NPTEL),,0,Placed,Cognizant,3.2
+MVN2023049,Amit Saini,Male,BCA,2023,85.0,80.3,67.8,88.1,0,4,JavaScript;AWS;Flask;C++;Python;Aptitude;React;HTML/CSS,Web Development (Udemy),CloudNest,6,Placed,Capgemini,4.2
+MVN2025050,Rohan Verma,Male,B.Tech CSE,2025,80.8,68.9,70.2,83.2,3,2,C++;Flask;Python;Excel;Machine Learning;AWS,Web Development (Udemy);Machine Learning (Coursera);Git & GitHub (Simplilearn);Python for Everybody (Coursera),,0,Not Placed,,0
+MVN2023051,Neha Kumar,Female,BCA,2023,94.9,61.9,61.8,67.9,0,3,React;AWS;Python;Data Analysis;C++,Data Analytics (Google),,0,Placed,Zoho,3.4
+MVN2024052,Nikhil Gupta,Male,B.Tech CSE,2024,73.9,63.0,76.3,80.8,0,3,Excel;C++;Data Analysis;AWS;Aptitude;Java,Power BI Essentials (Microsoft);Java Programming (NPTEL);Python for Everybody (Coursera),,0,Placed,Infosys,4.2
+MVN2025053,Vivaan Yadav,Male,MCA,2025,70.8,76.1,61.7,74.4,0,1,Git;Excel;SQL;Java;Data Analysis;Power BI;AWS;Aptitude,Java Programming (NPTEL);SQL Basics (HackerRank),,0,Placed,Capgemini,4.5
+MVN2023054,Riya Saini,Female,B.Sc IT,2023,69.3,74.3,64.9,65.5,1,4,Excel;Java;Machine Learning;Power BI;HTML/CSS;Python;React;Flask,,,0,Not Placed,,0
+MVN2026055,Kavya Malik,Female,BCA (AI & ML),2026,71.9,75.1,62.8,94.8,0,4,HTML/CSS;Excel;Machine Learning;Power BI;JavaScript;Data Analysis;AWS;Flask,Java Programming (NPTEL),InfoBridge,2,Placed,Accenture,4.7
+MVN2023056,Pooja Tiwari,Female,B.Sc IT,2023,73.8,69.1,60.0,83.2,0,2,Flask;Git;Aptitude;Data Analysis;Communication;Power BI;React;HTML/CSS;Python,Web Development (Udemy),DataWorks,2,Placed,Accenture,2.5
+MVN2025057,Simran Chauhan,Female,B.Sc IT,2025,78.0,78.9,68.9,76.0,0,4,Machine Learning;Communication;Data Analysis;Excel;JavaScript;Aptitude;Python,Machine Learning (Coursera);SQL Basics (HackerRank),DataWorks,6,Placed,Wipro,3.4
+MVN2026058,Neha Sharma,Female,MCA,2026,75.0,64.3,70.1,80.2,0,2,Aptitude;Power BI;Excel;Flask;Git,SQL Basics (HackerRank);Java Programming (NPTEL);Git & GitHub (Simplilearn),DataWorks,2,Placed,Cognizant,3.8
+MVN2025059,Ritu Gupta,Female,MCA,2025,66.3,80.7,91.5,81.8,0,1,Aptitude;Machine Learning;Communication;HTML/CSS;React;AWS;Git,Data Analytics (Google),DataWorks,3,Placed,TCS,4.7
+MVN2024060,Sneha Kumar,Female,BCA,2024,65.6,66.0,61.9,58.8,0,0,Power BI;Java;Excel;Machine Learning;AWS,,DataWorks,6,Not Placed,,0
+MVN2025061,Arjun Chauhan,Male,MCA,2025,92.8,81.5,73.4,74.2,0,1,SQL;AWS;Aptitude;JavaScript;Communication;HTML/CSS,,PixelSoft,2,Not Placed,,0
+MVN2025062,Mohit Rana,Male,BCA,2025,85.8,67.3,88.3,62.9,3,3,Data Analysis;Excel,Data Analytics (Google);SQL Basics (HackerRank);AWS Cloud Practitioner;Python for Everybody (Coursera),,0,Placed,TCS,7.5
+MVN2026063,Neha Tiwari,Female,B.Tech CSE,2026,86.4,56.1,68.9,74.0,0,3,Power BI;C++;Python;JavaScript;Flask;Java;Aptitude;React;Excel,,,0,Placed,Capgemini,3.5
+MVN2023064,Komal Kumar,Female,BCA (AI & ML),2023,69.5,78.2,70.5,69.3,3,2,Data Analysis;Java;SQL;Communication,AWS Cloud Practitioner;Machine Learning (Coursera),,0,Not Placed,,0
+MVN2026065,Anjali Sharma,Female,B.Tech CSE,2026,62.8,56.7,77.1,92.8,0,2,Data Analysis;AWS;Aptitude;React;JavaScript;Communication;Power BI;Python;Java,Machine Learning (Coursera);Git & GitHub (Simplilearn);Power BI Essentials (Microsoft);Web Development (Udemy),InfoBridge,2,Placed,TCS,5.3
+MVN2024066,Deepak Verma,Male,MCA,2024,85.8,72.7,71.2,100.0,2,2,HTML/CSS;Python;React,Data Analytics (Google),PixelSoft,2,Placed,TCS,2.5
+MVN2025067,Vivaan Saini,Male,B.Sc IT,2025,87.7,62.4,76.5,86.9,0,0,C++;Power BI;SQL;JavaScript;Communication;Data Analysis;AWS;React;Java,Power BI Essentials (Microsoft);Java Programming (NPTEL),,0,Placed,Infosys,5.7
+MVN2023068,Pooja Jain,Female,BCA,2023,62.2,51.6,52.4,77.3,0,3,Data Analysis;Aptitude;Excel;Communication,Data Analytics (Google);SQL Basics (HackerRank);Machine Learning (Coursera);Web Development (Udemy),CodeCraft Labs,6,Placed,Infosys,2.5
+MVN2025069,Isha Yadav,Female,MCA,2025,60.2,55.0,86.3,79.4,0,4,Communication;Java;Data Analysis;Python;React;HTML/CSS;AWS;JavaScript;Git,,,0,Placed,Tech Mahindra,5.2
+MVN2023070,Manish Gupta,Male,B.Sc IT,2023,61.0,78.7,69.1,83.7,0,1,HTML/CSS;Flask,Data Analytics (Google);Java Programming (NPTEL),DataWorks,6,Not Placed,,0
+MVN2026071,Manish Tiwari,Male,BCA,2026,83.6,62.1,69.4,85.0,0,0,Excel;React;HTML/CSS;AWS;Power BI;Java;C++;Git;Communication,Java Programming (NPTEL);AWS Cloud Practitioner,,0,Placed,TCS,4.7
+MVN2023072,Nikhil Mehta,Male,B.Tech CSE,2023,72.9,61.6,62.1,74.5,0,2,Power BI;JavaScript;HTML/CSS,,,0,Not Placed,,0
+MVN2023073,Deepak Verma,Male,MCA,2023,76.1,70.9,63.0,77.8,1,3,AWS;Python;SQL;Machine Learning;HTML/CSS;Data Analysis;Flask;Power BI;Communication,Git & GitHub (Simplilearn),PixelSoft,3,Placed,Deloitte,5.2
+MVN2026074,Sahil Malik,Male,B.Tech CSE,2026,71.2,49.0,64.2,64.8,0,3,Python;Power BI;Data Analysis,Power BI Essentials (Microsoft);Java Programming (NPTEL);Data Analytics (Google),InfoBridge,6,Placed,Wipro,2.7
+MVN2023075,Pooja Bansal,Female,BCA (AI & ML),2023,77.1,99.0,75.8,91.2,0,2,Communication;Java;Power BI,Data Analytics (Google);Java Programming (NPTEL);Git & GitHub (Simplilearn),,0,Not Placed,,0
+MVN2026076,Arjun Kumar,Male,B.Tech CSE,2026,66.4,57.8,72.0,73.5,0,3,Flask;Aptitude;Machine Learning;C++;React;SQL;Data Analysis;AWS;Git,Java Programming (NPTEL);AWS Cloud Practitioner;Power BI Essentials (Microsoft),,0,Placed,Zoho,2.5
+MVN2025077,Arjun Yadav,Male,BCA,2025,82.8,71.9,86.9,94.8,0,2,Data Analysis;AWS;Aptitude;Communication;Power BI;Flask,Data Analytics (Google);Git & GitHub (Simplilearn);Power BI Essentials (Microsoft),TechNova Solutions,6,Placed,Infosys,6.3
+MVN2026078,Simran Singh,Female,B.Sc IT,2026,63.6,70.1,75.4,71.2,0,2,Flask;Data Analysis;React;SQL;AWS,,,0,Not Placed,,0
+MVN2026079,Anjali Singh,Female,B.Tech CSE,2026,79.6,65.5,56.0,75.1,0,1,Aptitude;Python;C++;Machine Learning,Web Development (Udemy);SQL Basics (HackerRank);AWS Cloud Practitioner;Machine Learning (Coursera),CloudNest,6,Placed,Deloitte,6.0
+MVN2023080,Rahul Chauhan,Male,BCA (AI & ML),2023,76.7,71.5,61.7,77.6,3,3,JavaScript;Java;Flask;Git;Aptitude;HTML/CSS;Data Analysis;React,Web Development (Udemy);AWS Cloud Practitioner,,0,Not Placed,,0
+MVN2026081,Manish Mehta,Male,MCA,2026,81.6,77.0,64.2,70.2,2,2,C++;SQL,Java Programming (NPTEL);Machine Learning (Coursera),,0,Not Placed,,0
+MVN2026082,Nikhil Gupta,Male,BCA,2026,67.4,77.7,75.4,72.4,0,1,Communication;C++;Excel,Python for Everybody (Coursera),TechNova Solutions,1,Not Placed,,0
+MVN2025083,Isha Jain,Female,B.Sc IT,2025,65.0,78.4,72.6,63.4,0,2,AWS;C++;SQL;Machine Learning;React;Data Analysis;Communication,,DataWorks,6,Placed,Tech Mahindra,5.5
+MVN2024084,Priya Singh,Female,B.Tech CSE,2024,65.4,68.2,70.5,90.1,0,2,Flask;Aptitude;Power BI;JavaScript,Python for Everybody (Coursera),,0,Not Placed,,0
+MVN2026085,Aarav Sharma,Male,B.Sc IT,2026,88.4,47.3,75.3,72.0,0,4,C++;Flask;HTML/CSS;Data Analysis,AWS Cloud Practitioner,,0,Placed,Infosys,4.8
+MVN2026086,Arjun Bansal,Male,B.Sc IT,2026,74.9,70.4,64.0,91.7,0,3,Git;AWS;Flask;Java;SQL,Web Development (Udemy),,0,Placed,Zoho,3.0
+MVN2025087,Deepak Jain,Male,BCA,2025,69.7,75.9,65.1,75.8,0,2,Machine Learning;Python;Data Analysis;Power BI;Excel;Communication;AWS;Flask,Java Programming (NPTEL);Machine Learning (Coursera);Git & GitHub (Simplilearn),,0,Placed,Wipro,5.3
+MVN2024088,Aditya Rana,Male,BCA (AI & ML),2024,86.0,67.9,66.7,59.6,0,1,JavaScript;Power BI;Java;Communication;Git;Python,Data Analytics (Google),InfoBridge,3,Not Placed,,0
+MVN2024089,Aditya Saini,Male,BCA,2024,90.8,75.3,70.2,77.8,0,2,Power BI;Excel;React;C++;SQL;Git,Web Development (Udemy);Java Programming (NPTEL);AWS Cloud Practitioner,PixelSoft,6,Placed,Infosys,3.5
+MVN2025090,Sahil Tiwari,Male,B.Sc IT,2025,59.2,83.4,77.7,83.4,0,2,Communication;Java;C++,Machine Learning (Coursera);AWS Cloud Practitioner;Data Analytics (Google),,0,Placed,Cognizant,5.9
+MVN2025091,Riya Yadav,Female,BCA,2025,76.5,67.4,71.8,71.5,0,3,Python;JavaScript;Machine Learning;Java;Flask;HTML/CSS;Communication;React,Web Development (Udemy);SQL Basics (HackerRank);Git & GitHub (Simplilearn),CloudNest,1,Placed,Tech Mahindra,5.5
+MVN2025092,Vivaan Verma,Male,MCA,2025,78.8,75.3,65.2,90.4,0,3,C++;Power BI;AWS;Flask;Excel,AWS Cloud Practitioner,DataWorks,1,Placed,TCS,5.0
+MVN2023093,Nikhil Chauhan,Male,B.Sc IT,2023,64.2,67.6,67.3,83.8,0,3,SQL;Java;Aptitude;Machine Learning;C++;React;Flask;HTML/CSS;Power BI,Power BI Essentials (Microsoft);AWS Cloud Practitioner,,0,Placed,Accenture,7.5
+MVN2026094,Pooja Saini,Female,MCA,2026,78.1,90.8,83.6,72.3,0,4,Machine Learning;Python;Excel;HTML/CSS;SQL;Flask;Power BI;AWS,SQL Basics (HackerRank);Web Development (Udemy);Java Programming (NPTEL),,0,Placed,Infosys,6.3
+MVN2025095,Arjun Bansal,Male,BCA,2025,89.0,78.5,52.2,79.4,0,2,Machine Learning;SQL;Java;Flask;AWS;Power BI;Communication;Python,,TechNova Solutions,2,Placed,TCS,2.5
+MVN2024096,Rohan Tiwari,Male,BCA,2024,75.1,79.3,71.3,84.8,0,1,React;AWS;Communication;SQL;HTML/CSS,Python for Everybody (Coursera);Java Programming (NPTEL);AWS Cloud Practitioner,,0,Placed,Wipro,4.8
+MVN2024097,Priya Chauhan,Female,MCA,2024,87.5,87.9,88.8,74.9,2,4,HTML/CSS;Java;Power BI;Python;C++;Git,Machine Learning (Coursera),,0,Not Placed,,0
+MVN2023098,Riya Malik,Female,BCA (AI & ML),2023,74.6,82.9,68.7,63.1,0,1,Java;C++;Excel;React;Machine Learning;Aptitude,Data Analytics (Google);Git & GitHub (Simplilearn),,0,Placed,Capgemini,2.5
+MVN2023099,Ritu Verma,Female,B.Tech CSE,2023,57.5,80.2,59.9,80.7,0,1,Java;Excel;Git;Power BI;Machine Learning,Python for Everybody (Coursera),CloudNest,6,Not Placed,,0
+MVN2026100,Priya Gupta,Female,B.Tech CSE,2026,71.4,57.0,86.7,77.5,0,2,Aptitude;Excel;Flask,,TechNova Solutions,2,Placed,HCL,4.3
+MVN2023101,Neha Jain,Female,BCA (AI & ML),2023,81.0,90.5,67.7,91.3,0,2,Power BI;React;Data Analysis;Machine Learning;JavaScript;Flask,AWS Cloud Practitioner;SQL Basics (HackerRank),,0,Placed,Capgemini,3.7
+MVN2023102,Neha Saini,Female,MCA,2023,99.0,72.6,58.9,80.1,0,3,AWS;Flask;SQL;React;HTML/CSS,AWS Cloud Practitioner;Git & GitHub (Simplilearn);Web Development (Udemy),CodeCraft Labs,6,Placed,HCL,3.2
+MVN2025103,Mohit Rana,Male,B.Sc IT,2025,68.5,71.7,64.3,74.6,0,0,JavaScript;Power BI;Flask;Java;Git;Excel;Communication,Web Development (Udemy),,0,Not Placed,,0
+MVN2023104,Karan Verma,Male,MCA,2023,47.5,82.9,85.0,92.5,0,1,SQL;React;HTML/CSS;Power BI;Communication;Python;JavaScript,Web Development (Udemy);SQL Basics (HackerRank),,0,Not Placed,,0
+MVN2024105,Rohan Saini,Male,BCA (AI & ML),2024,66.2,60.9,55.9,97.5,0,1,Flask;AWS;Java;HTML/CSS;Machine Learning;Git;Communication;JavaScript;SQL,Git & GitHub (Simplilearn);Python for Everybody (Coursera);Java Programming (NPTEL),,0,Placed,TCS,3.8
+MVN2025106,Karan Verma,Male,BCA,2025,81.2,60.7,82.7,74.8,0,1,Machine Learning;Excel;Git;JavaScript,Web Development (Udemy);Python for Everybody (Coursera);SQL Basics (HackerRank);AWS Cloud Practitioner,,0,Placed,HCL,5.0
+MVN2026107,Sneha Jain,Female,BCA,2026,70.3,79.1,67.6,84.4,1,1,Python;Java;Excel;Machine Learning,AWS Cloud Practitioner,InfoBridge,2,Not Placed,,0
+MVN2025108,Deepak Jain,Male,B.Sc IT,2025,79.9,68.9,76.2,83.3,0,3,C++;Communication;Python;Aptitude;Git;Data Analysis;AWS,Java Programming (NPTEL);Data Analytics (Google),,0,Placed,Wipro,6.2
+MVN2026109,Anjali Mehta,Female,MCA,2026,84.5,65.0,64.8,65.9,0,1,AWS;JavaScript;SQL;Git;Machine Learning;Java;HTML/CSS;React;Power BI,Data Analytics (Google),,0,Not Placed,,0
+MVN2025110,Komal Chauhan,Female,BCA,2025,53.2,89.0,87.5,82.1,1,1,Git;Data Analysis;Python;AWS;SQL,Machine Learning (Coursera),,0,Placed,Zoho,5.5
+MVN2025111,Aarav Bansal,Male,B.Sc IT,2025,85.0,73.1,69.6,81.5,0,0,SQL;Python;Flask;Excel;React;C++;Power BI,Machine Learning (Coursera),,0,Placed,Wipro,4.1
+MVN2025112,Simran Jain,Female,BCA,2025,60.5,79.4,52.9,81.7,3,2,Java;React;Python;Flask;Aptitude;HTML/CSS;Data Analysis;Communication,AWS Cloud Practitioner;Java Programming (NPTEL),TechNova Solutions,1,Not Placed,,0
+MVN2025113,Pooja Jain,Female,BCA (AI & ML),2025,66.2,74.0,64.6,70.2,0,2,Excel;Java;React;Communication;SQL;AWS;Data Analysis;Power BI;Git,Java Programming (NPTEL),,0,Placed,TCS,3.3
+MVN2024114,Aditya Yadav,Male,B.Sc IT,2024,76.6,81.8,74.7,96.7,0,4,C++;Machine Learning;Power BI;Java,Machine Learning (Coursera);Web Development (Udemy),PixelSoft,2,Placed,Accenture,5.0
+MVN2024115,Aarav Saini,Male,BCA,2024,61.2,65.8,51.6,80.3,0,3,Machine Learning;SQL;C++;Data Analysis,,,0,Not Placed,,0
+MVN2023116,Deepak Kumar,Male,BCA (AI & ML),2023,67.9,57.9,62.4,70.8,0,1,Communication;Git;Data Analysis;Aptitude;AWS;Flask;Excel;HTML/CSS;Machine Learning,,PixelSoft,6,Not Placed,,0
+MVN2025117,Sneha Saini,Female,B.Sc IT,2025,99.0,76.9,60.5,81.8,0,1,Excel;Machine Learning,,InfoBridge,1,Not Placed,,0
+MVN2023118,Amit Tiwari,Male,B.Sc IT,2023,99.0,71.0,71.2,91.5,0,0,C++;Power BI;AWS;Java;Data Analysis;Excel,Data Analytics (Google);Python for Everybody (Coursera),CloudNest,2,Placed,Deloitte,5.5
+MVN2025119,Kavya Saini,Female,MCA,2025,91.7,65.7,69.7,98.1,0,3,JavaScript;Python;Flask;Java;HTML/CSS;Git;Machine Learning;C++;Communication,Data Analytics (Google),,0,Placed,Zoho,3.0
+MVN2024120,Arjun Mehta,Male,B.Sc IT,2024,80.2,56.3,79.7,72.7,2,1,Data Analysis;React;Communication;Git;HTML/CSS;Power BI;Aptitude,,,0,Not Placed,,0
+MVN2025121,Deepak Saini,Male,BCA,2025,80.2,73.8,69.3,66.6,2,3,SQL;Machine Learning;Power BI;React;JavaScript;Excel;Data Analysis,Web Development (Udemy);SQL Basics (HackerRank);Java Programming (NPTEL),,0,Placed,Cognizant,3.9
+MVN2025122,Simran Chauhan,Female,B.Sc IT,2025,82.3,76.6,80.8,79.3,0,4,JavaScript;Data Analysis;Excel;Java;Aptitude;Machine Learning;React;HTML/CSS,Git & GitHub (Simplilearn);SQL Basics (HackerRank);Web Development (Udemy),,0,Placed,HCL,5.2
+MVN2025123,Rohan Bansal,Male,BCA,2025,76.1,74.7,74.3,67.2,2,0,Data Analysis;C++;SQL;HTML/CSS;Flask;AWS;Power BI,Power BI Essentials (Microsoft);SQL Basics (HackerRank);Git & GitHub (Simplilearn);Python for Everybody (Coursera),,0,Not Placed,,0
+MVN2023124,Isha Malik,Female,B.Sc IT,2023,73.6,78.8,80.5,80.3,0,3,Git;C++;Communication;AWS,Power BI Essentials (Microsoft);Data Analytics (Google);Python for Everybody (Coursera),TechNova Solutions,2,Placed,TCS,3.9
+MVN2026125,Mohit Gupta,Male,MCA,2026,69.4,67.7,71.0,76.9,0,2,Communication;SQL;Machine Learning;Aptitude;JavaScript;Flask,Machine Learning (Coursera);Web Development (Udemy);Data Analytics (Google);Java Programming (NPTEL),,0,Placed,Deloitte,4.1
+MVN2026126,Simran Bansal,Female,B.Sc IT,2026,72.1,67.6,61.1,94.5,0,2,AWS;C++;Aptitude;SQL;Data Analysis;Communication;JavaScript;Python,Web Development (Udemy);SQL Basics (HackerRank),,0,Placed,Tech Mahindra,3.1
+MVN2023127,Karan Verma,Male,B.Sc IT,2023,82.9,72.8,72.7,90.7,2,3,HTML/CSS;JavaScript;Flask,Power BI Essentials (Microsoft);AWS Cloud Practitioner;Python for Everybody (Coursera);SQL Basics (HackerRank),,0,Not Placed,,0
+MVN2025128,Komal Jain,Female,BCA,2025,97.0,68.4,84.1,75.5,0,3,Java;React;Machine Learning;HTML/CSS;SQL;Communication;Aptitude;Git,Web Development (Udemy),,0,Placed,Accenture,6.3
+MVN2025129,Amit Chauhan,Male,BCA (AI & ML),2025,71.2,58.6,65.8,70.8,0,1,Java;JavaScript;AWS;Flask,Power BI Essentials (Microsoft);Data Analytics (Google),CloudNest,1,Placed,TCS,4.4
+MVN2023130,Kavya Singh,Female,BCA,2023,89.5,62.0,72.3,89.8,2,2,React;AWS;C++;Machine Learning;Excel;Data Analysis,SQL Basics (HackerRank);Java Programming (NPTEL),InfoBridge,1,Placed,HCL,4.8
+MVN2023131,Neha Bansal,Female,BCA (AI & ML),2023,77.8,73.7,58.8,84.9,0,2,Communication;Java;Aptitude;Flask;Data Analysis;Machine Learning;Python;Power BI,Power BI Essentials (Microsoft);Java Programming (NPTEL),DataWorks,3,Placed,Infosys,4.5
+MVN2024132,Riya Jain,Female,MCA,2024,67.8,66.4,64.7,73.6,0,4,HTML/CSS;Power BI;Communication;Java;Machine Learning;Aptitude;Git;Excel,Git & GitHub (Simplilearn);Python for Everybody (Coursera),InfoBridge,6,Placed,Tech Mahindra,3.8
+MVN2023133,Aditya Bansal,Male,B.Tech CSE,2023,68.3,63.7,84.2,84.7,1,1,Machine Learning;Excel;Python;HTML/CSS;Java;Git;SQL,SQL Basics (HackerRank);Web Development (Udemy),CodeCraft Labs,3,Placed,Tech Mahindra,6.0
+MVN2025134,Priya Verma,Female,BCA (AI & ML),2025,89.5,90.0,54.8,73.9,2,4,Aptitude;Power BI;C++;Git;AWS;Java;Flask;Python;JavaScript,Machine Learning (Coursera),,0,Not Placed,,0
+MVN2025135,Simran Saini,Female,B.Sc IT,2025,77.3,78.6,72.9,100.0,0,2,Aptitude;JavaScript;Python;Git;Power BI;SQL;Communication;HTML/CSS,Python for Everybody (Coursera);Web Development (Udemy);Power BI Essentials (Microsoft),PixelSoft,3,Placed,TCS,4.8
+MVN2026136,Arjun Mehta,Male,B.Tech CSE,2026,73.7,89.9,62.7,74.8,1,2,Git;HTML/CSS;C++;Flask;Excel;Aptitude;Communication;Machine Learning;JavaScript,AWS Cloud Practitioner;SQL Basics (HackerRank);Machine Learning (Coursera),,0,Placed,HCL,4.4
+MVN2024137,Vivaan Kumar,Male,MCA,2024,68.7,67.1,95.3,90.4,0,2,Power BI;Java;Communication;HTML/CSS;Aptitude;JavaScript,AWS Cloud Practitioner,InfoBridge,6,Placed,TCS,5.4
+MVN2025138,Aditya Rana,Male,B.Tech CSE,2025,79.9,83.1,66.4,88.2,0,2,Excel;Data Analysis,Java Programming (NPTEL);Python for Everybody (Coursera);Data Analytics (Google);Web Development (Udemy),,0,Placed,Zoho,2.5
+MVN2025139,Anjali Tiwari,Female,MCA,2025,80.5,70.3,83.8,81.5,0,3,Python;C++;AWS;Data Analysis,Data Analytics (Google);Python for Everybody (Coursera),CloudNest,2,Placed,Deloitte,5.3
+MVN2025140,Isha Singh,Female,B.Sc IT,2025,74.3,84.8,66.1,81.9,0,1,Java;Data Analysis;C++;Power BI;Flask;HTML/CSS;Git;Excel,Power BI Essentials (Microsoft);Web Development (Udemy);Machine Learning (Coursera),PixelSoft,3,Placed,Tech Mahindra,6.1
+MVN2024141,Priya Chauhan,Female,BCA,2024,95.6,68.9,76.5,82.2,1,2,HTML/CSS;Flask,Git & GitHub (Simplilearn);SQL Basics (HackerRank),TechNova Solutions,3,Not Placed,,0
+MVN2026142,Amit Bansal,Male,BCA (AI & ML),2026,80.1,73.9,72.8,75.5,0,3,Aptitude;SQL;Java;C++;AWS;Flask,,,0,Placed,Tech Mahindra,5.1
+MVN2023143,Priya Kumar,Female,B.Sc IT,2023,67.0,84.0,71.3,64.8,0,3,C++;Machine Learning;Communication;JavaScript;Git;Aptitude;Power BI,Git & GitHub (Simplilearn);Machine Learning (Coursera);Python for Everybody (Coursera),,0,Placed,Zoho,6.0
+MVN2024144,Anjali Jain,Female,BCA (AI & ML),2024,89.7,71.3,73.8,74.4,0,4,Python;HTML/CSS;Machine Learning;Data Analysis;Communication;Flask;AWS;C++;Java,,PixelSoft,6,Placed,Accenture,5.6
+MVN2026145,Manish Jain,Male,B.Tech CSE,2026,52.0,76.4,55.5,75.0,0,1,JavaScript;HTML/CSS;Power BI,,TechNova Solutions,3,Not Placed,,0
+MVN2024146,Arjun Rana,Male,MCA,2024,61.2,80.7,64.4,86.5,0,2,JavaScript;React;Machine Learning;Python,Git & GitHub (Simplilearn);Power BI Essentials (Microsoft);Data Analytics (Google),PixelSoft,3,Placed,Cognizant,4.4
+MVN2024147,Aarav Chauhan,Male,B.Sc IT,2024,67.1,71.5,54.7,82.4,2,1,C++;JavaScript;SQL;Power BI;Machine Learning;Communication,,CloudNest,1,Not Placed,,0
+MVN2024148,Mohit Rana,Male,MCA,2024,73.2,83.2,84.4,83.4,1,3,HTML/CSS;Power BI;Data Analysis;Excel,Web Development (Udemy);Python for Everybody (Coursera);AWS Cloud Practitioner;Data Analytics (Google),CloudNest,3,Placed,Deloitte,6.4
+MVN2024149,Kavya Chauhan,Female,MCA,2024,87.3,74.0,76.4,87.1,1,2,Python;Flask;Power BI;Machine Learning;JavaScript;AWS;Excel;Communication,AWS Cloud Practitioner,PixelSoft,1,Placed,Infosys,3.9
+MVN2023150,Vivaan Gupta,Male,BCA (AI & ML),2023,73.6,57.7,88.0,81.3,0,3,AWS;Flask;Communication;SQL;HTML/CSS;Data Analysis;C++;Excel;Machine Learning,Web Development (Udemy);AWS Cloud Practitioner,CodeCraft Labs,3,Placed,Wipro,5.5
+MVN2023151,Manish Saini,Male,B.Sc IT,2023,55.1,67.5,65.5,55.8,0,1,Communication;Java;JavaScript;Flask;SQL,,PixelSoft,6,Placed,HCL,4.2
+MVN2026152,Arjun Yadav,Male,BCA (AI & ML),2026,64.3,71.5,74.3,80.0,0,3,Power BI;Communication;Data Analysis;Excel,Power BI Essentials (Microsoft),InfoBridge,6,Not Placed,,0
+MVN2026153,Rahul Singh,Male,B.Sc IT,2026,74.3,74.1,67.8,59.6,0,1,Python;Java;React;Machine Learning;Flask;SQL;Power BI;HTML/CSS;Aptitude,,TechNova Solutions,6,Not Placed,,0
+MVN2025154,Neha Singh,Female,MCA,2025,92.0,78.4,67.2,74.3,0,1,SQL;React,,CodeCraft Labs,3,Not Placed,,0
+MVN2026155,Rahul Saini,Male,B.Sc IT,2026,83.2,72.6,84.0,73.5,0,3,Git;Python,Machine Learning (Coursera);Web Development (Udemy),,0,Placed,Accenture,7.0
+MVN2023156,Arjun Rana,Male,B.Tech CSE,2023,84.5,66.6,76.4,93.2,0,2,Machine Learning;AWS;Data Analysis;Power BI;Communication;Java;C++;Git;React,Web Development (Udemy),,0,Placed,HCL,4.4
+MVN2025157,Vivaan Tiwari,Male,BCA (AI & ML),2025,76.0,65.5,87.4,75.2,2,1,Git;Machine Learning;Python;AWS;Aptitude,,PixelSoft,6,Placed,Zoho,4.6
+MVN2026158,Arjun Rana,Male,BCA (AI & ML),2026,73.8,93.4,64.3,97.3,0,4,Power BI;Communication;Data Analysis;HTML/CSS,,,0,Placed,Tech Mahindra,3.3
+MVN2025159,Riya Tiwari,Female,MCA,2025,75.2,78.1,70.4,69.8,0,0,Aptitude;Excel;Data Analysis;JavaScript;Flask;Python;HTML/CSS,SQL Basics (HackerRank),,0,Not Placed,,0
+MVN2025160,Sneha Kumar,Female,BCA,2025,78.0,78.5,53.3,75.2,0,1,Machine Learning;Power BI;Git;AWS;Data Analysis;Excel;SQL;Python;Flask,,,0,Placed,Wipro,3.2
+MVN2026161,Simran Sharma,Female,BCA (AI & ML),2026,84.5,88.8,72.2,75.4,0,3,Java;Data Analysis;Excel;Aptitude;SQL,,InfoBridge,2,Placed,TCS,2.5
+MVN2026162,Isha Mehta,Female,BCA (AI & ML),2026,80.5,56.2,78.8,94.8,0,1,Aptitude;AWS;Communication;Excel;Git;Python;C++;Machine Learning,Web Development (Udemy),,0,Placed,Zoho,2.5
+MVN2026163,Simran Kumar,Female,MCA,2026,76.6,66.5,74.9,73.3,3,1,Power BI;C++;Flask;Machine Learning;HTML/CSS;Git;Excel;JavaScript,Machine Learning (Coursera);Git & GitHub (Simplilearn),DataWorks,3,Not Placed,,0
+MVN2024164,Manish Malik,Male,B.Sc IT,2024,79.4,68.3,81.7,87.7,0,2,React;Excel;Communication;Flask;HTML/CSS;Git,Java Programming (NPTEL),DataWorks,6,Not Placed,,0
+MVN2026165,Ritu Bansal,Female,B.Sc IT,2026,62.8,59.1,66.4,91.6,1,1,Data Analysis;Python;JavaScript;Excel,,,0,Not Placed,,0
+MVN2025166,Rohan Verma,Male,B.Tech CSE,2025,74.8,59.2,74.8,90.0,0,1,React;AWS;Machine Learning;JavaScript;Communication,Power BI Essentials (Microsoft);SQL Basics (HackerRank),,0,Not Placed,,0
+MVN2024167,Neha Tiwari,Female,BCA (AI & ML),2024,82.5,68.5,85.0,76.5,0,3,Flask;Power BI,SQL Basics (HackerRank),InfoBridge,6,Placed,Zoho,4.6
+MVN2023168,Priya Kumar,Female,BCA (AI & ML),2023,77.8,76.3,90.8,90.3,0,1,HTML/CSS;React,Data Analytics (Google);Git & GitHub (Simplilearn),,0,Placed,HCL,4.6
+MVN2025169,Pooja Malik,Female,B.Sc IT,2025,73.6,79.3,69.3,80.5,0,1,Java;Communication;Git;Aptitude;Power BI;Data Analysis,Python for Everybody (Coursera),,0,Placed,Cognizant,3.4
+MVN2024170,Sahil Mehta,Male,B.Tech CSE,2024,74.8,52.0,69.2,89.2,0,2,Java;AWS;React;Git,Java Programming (NPTEL),,0,Placed,Accenture,3.9
+MVN2023171,Nikhil Jain,Male,B.Sc IT,2023,72.6,83.1,90.9,69.6,0,2,Power BI;JavaScript;Flask,Git & GitHub (Simplilearn);Data Analytics (Google);SQL Basics (HackerRank);Java Programming (NPTEL),DataWorks,2,Placed,Wipro,6.1
+MVN2023172,Pooja Malik,Female,B.Sc IT,2023,72.1,74.2,89.1,88.7,2,2,Communication;Power BI;JavaScript;Excel,,,0,Not Placed,,0
+MVN2025173,Manish Saini,Male,MCA,2025,73.4,74.0,94.0,90.5,0,4,HTML/CSS;Data Analysis;AWS;Power BI;React,Git & GitHub (Simplilearn);Web Development (Udemy);Python for Everybody (Coursera),InfoBridge,1,Placed,Capgemini,8.4
+MVN2024174,Manish Kumar,Male,BCA (AI & ML),2024,80.4,60.6,81.9,96.3,0,2,Power BI;Communication;SQL;Python;JavaScript;React;AWS;Flask;Excel,Java Programming (NPTEL);Python for Everybody (Coursera);Power BI Essentials (Microsoft);Web Development (Udemy),CloudNest,2,Placed,Deloitte,6.3
+MVN2023175,Mohit Singh,Male,BCA,2023,77.3,75.2,69.4,84.2,0,3,Data Analysis;C++;React;Power BI;Machine Learning;JavaScript;Java;Git;HTML/CSS,Machine Learning (Coursera);Power BI Essentials (Microsoft),DataWorks,6,Placed,Cognizant,4.7
+MVN2025176,Anjali Saini,Female,B.Tech CSE,2025,85.9,59.7,79.6,86.0,1,2,React;Git;SQL;Power BI;Data Analysis;Java;Machine Learning;Flask;HTML/CSS,,,0,Placed,Capgemini,5.3
+MVN2023177,Deepak Chauhan,Male,MCA,2023,75.3,70.3,68.5,80.2,0,1,JavaScript;C++;HTML/CSS;Machine Learning;Flask,,PixelSoft,6,Placed,Wipro,2.5
+MVN2023178,Manish Tiwari,Male,MCA,2023,64.1,50.5,61.5,73.6,0,0,Java;Flask;C++;Machine Learning;React;Communication;Data Analysis;Python;Power BI,Java Programming (NPTEL);Python for Everybody (Coursera),DataWorks,1,Not Placed,,0
+MVN2024179,Kavya Kumar,Female,MCA,2024,84.1,65.1,86.4,100.0,0,3,Java;React;HTML/CSS,Git & GitHub (Simplilearn);Python for Everybody (Coursera),,0,Not Placed,,0
+MVN2023180,Manish Tiwari,Male,B.Tech CSE,2023,60.1,55.5,92.9,90.2,0,3,Data Analysis;React,,CloudNest,6,Placed,Infosys,6.9
+MVN2025181,Komal Chauhan,Female,B.Tech CSE,2025,82.5,79.6,75.9,82.8,0,4,Git;React;Java;Power BI;Aptitude;Machine Learning;C++;HTML/CSS;AWS,,,0,Placed,Deloitte,4.2
+MVN2024182,Simran Malik,Female,BCA (AI & ML),2024,57.1,71.0,67.2,70.1,1,2,Python;JavaScript,Git & GitHub (Simplilearn),InfoBridge,6,Not Placed,,0
+MVN2024183,Deepak Saini,Male,BCA (AI & ML),2024,58.3,62.1,79.2,89.4,0,1,Excel;C++;JavaScript;SQL;Aptitude;Java;Python;React;Data Analysis,SQL Basics (HackerRank),CodeCraft Labs,1,Placed,Deloitte,5.6
+MVN2026184,Nikhil Bansal,Male,MCA,2026,75.1,58.7,60.3,74.0,0,1,Flask;Excel,,CodeCraft Labs,2,Not Placed,,0
+MVN2023185,Aarav Kumar,Male,BCA (AI & ML),2023,79.5,74.2,69.8,93.6,0,2,Flask;AWS;Excel;Data Analysis;HTML/CSS;Git,Web Development (Udemy);Machine Learning (Coursera),TechNova Solutions,2,Placed,TCS,3.1
+MVN2024186,Neha Gupta,Female,B.Tech CSE,2024,74.5,72.4,75.4,73.0,0,2,Machine Learning;Python;Aptitude;Data Analysis;Excel;C++,AWS Cloud Practitioner;Data Analytics (Google),TechNova Solutions,3,Placed,TCS,3.0
+MVN2026187,Rahul Yadav,Male,MCA,2026,67.1,64.8,57.6,88.9,1,2,AWS;React;C++;JavaScript;Communication;Aptitude;Machine Learning,Machine Learning (Coursera),DataWorks,2,Not Placed,,0
+MVN2026188,Nikhil Tiwari,Male,BCA,2026,65.6,93.5,72.8,68.1,0,3,AWS;Machine Learning;Communication;C++;React;SQL;JavaScript;Power BI,SQL Basics (HackerRank),,0,Placed,Capgemini,5.3
+MVN2025189,Rohan Bansal,Male,BCA,2025,72.7,72.4,68.1,78.5,0,2,Java;JavaScript;React;Power BI;Data Analysis,SQL Basics (HackerRank);Machine Learning (Coursera),,0,Not Placed,,0
+MVN2024190,Vivaan Saini,Male,B.Tech CSE,2024,73.1,97.8,56.3,72.0,0,3,Power BI;JavaScript;Python;SQL;Git,SQL Basics (HackerRank);Data Analytics (Google);Git & GitHub (Simplilearn);Web Development (Udemy),,0,Placed,Capgemini,4.4
+MVN2024191,Rahul Rana,Male,B.Tech CSE,2024,90.3,68.2,75.7,78.0,0,3,Power BI;Git;JavaScript;React;Flask,Web Development (Udemy);Java Programming (NPTEL),InfoBridge,6,Placed,TCS,3.8
+MVN2026192,Ananya Bansal,Female,BCA,2026,67.5,59.8,59.9,80.3,0,3,Power BI;Communication;SQL;HTML/CSS;Git;React;Python;AWS;C++,,,0,Not Placed,,0
+MVN2026193,Riya Verma,Female,B.Sc IT,2026,58.4,75.3,72.3,88.3,0,1,React;HTML/CSS;SQL;Aptitude,Machine Learning (Coursera);Data Analytics (Google),,0,Placed,Zoho,3.5
+MVN2025194,Deepak Saini,Male,B.Sc IT,2025,90.7,76.2,57.9,72.9,0,4,Aptitude;Flask;C++;Excel;HTML/CSS;AWS;Power BI;Machine Learning;Communication,,,0,Placed,Deloitte,4.2
+MVN2023195,Amit Saini,Male,MCA,2023,64.8,73.7,75.4,65.9,0,2,C++;AWS,Python for Everybody (Coursera);AWS Cloud Practitioner,PixelSoft,2,Not Placed,,0
+MVN2023196,Isha Mehta,Female,BCA (AI & ML),2023,84.9,78.1,82.4,69.1,3,4,React;Machine Learning,Python for Everybody (Coursera),,0,Not Placed,,0
+MVN2026197,Amit Kumar,Male,B.Tech CSE,2026,75.4,95.2,82.1,83.9,0,3,Python;Machine Learning,Python for Everybody (Coursera);Git & GitHub (Simplilearn),,0,Placed,Capgemini,3.9
+MVN2025198,Manish Tiwari,Male,MCA,2025,81.1,81.6,68.5,72.1,0,4,Python;Machine Learning;AWS;Excel;Power BI;React,Power BI Essentials (Microsoft);SQL Basics (HackerRank);Python for Everybody (Coursera),,0,Not Placed,,0
+MVN2024199,Vivaan Mehta,Male,BCA (AI & ML),2024,79.1,61.0,51.6,58.5,0,2,Excel;JavaScript;Git;React;Java;HTML/CSS,Data Analytics (Google);Machine Learning (Coursera);Web Development (Udemy);SQL Basics (HackerRank),CodeCraft Labs,1,Placed,HCL,5.5
+MVN2023200,Deepak Chauhan,Male,BCA,2023,74.8,71.0,78.4,89.2,1,3,Git;React;Machine Learning;Flask;Python;Power BI;Excel;C++,,,0,Placed,Deloitte,3.4
+MVN2025201,Vivaan Sharma,Male,MCA,2025,83.9,70.3,63.3,72.4,0,2,Java;SQL;Communication,Data Analytics (Google);Java Programming (NPTEL);Python for Everybody (Coursera);AWS Cloud Practitioner,,0,Not Placed,,0
+MVN2025202,Ritu Yadav,Female,MCA,2025,84.9,76.7,69.9,79.7,0,3,HTML/CSS;Communication,Python for Everybody (Coursera);Machine Learning (Coursera);Java Programming (NPTEL),DataWorks,6,Placed,Zoho,5.5
+MVN2023203,Komal Bansal,Female,B.Sc IT,2023,60.9,61.3,70.1,76.9,0,0,Flask;Data Analysis;AWS;React,Git & GitHub (Simplilearn);Web Development (Udemy),CodeCraft Labs,2,Placed,Cognizant,4.0
+MVN2023204,Mohit Saini,Male,MCA,2023,73.3,76.9,75.3,80.6,0,1,Java;Aptitude;React;SQL;Communication;HTML/CSS;Data Analysis,AWS Cloud Practitioner;Web Development (Udemy);Python for Everybody (Coursera),,0,Not Placed,,0
+MVN2026205,Manish Tiwari,Male,B.Tech CSE,2026,80.0,87.3,57.9,92.2,0,0,Excel;Machine Learning;React;AWS;C++,AWS Cloud Practitioner;SQL Basics (HackerRank),,0,Not Placed,,0
+MVN2025206,Ananya Rana,Female,BCA (AI & ML),2025,75.5,68.6,84.9,73.9,0,0,C++;JavaScript;Aptitude,Power BI Essentials (Microsoft),,0,Not Placed,,0
+MVN2025207,Sneha Kumar,Female,B.Sc IT,2025,74.0,76.4,71.6,91.9,0,2,C++;Python;JavaScript,Java Programming (NPTEL),PixelSoft,1,Not Placed,,0
+MVN2024208,Anjali Singh,Female,B.Tech CSE,2024,60.3,69.8,79.3,68.3,1,3,AWS;Java;Python;Communication;HTML/CSS;Machine Learning;Git;Excel;React,,PixelSoft,1,Not Placed,,0
+MVN2024209,Rahul Yadav,Male,MCA,2024,48.1,66.5,64.2,83.9,0,1,Git;C++;Communication;JavaScript,Data Analytics (Google),CodeCraft Labs,2,Not Placed,,0
+MVN2026210,Karan Tiwari,Male,B.Sc IT,2026,75.2,62.3,75.8,92.0,0,2,Data Analysis;Flask;Git;Java;HTML/CSS;JavaScript;SQL;Communication,Machine Learning (Coursera);Data Analytics (Google),TechNova Solutions,3,Placed,Wipro,5.6
+MVN2023211,Karan Saini,Male,B.Tech CSE,2023,65.2,70.3,65.6,97.1,0,1,Git;Aptitude;AWS;HTML/CSS;Flask;Communication;React,Power BI Essentials (Microsoft);Java Programming (NPTEL);Git & GitHub (Simplilearn),,0,Placed,Deloitte,3.7
+MVN2024212,Arjun Mehta,Male,B.Tech CSE,2024,67.3,82.4,67.9,73.9,0,3,HTML/CSS;React;Aptitude;JavaScript;Excel;Power BI;Flask,Machine Learning (Coursera);Web Development (Udemy);Git & GitHub (Simplilearn);Power BI Essentials (Microsoft),,0,Placed,TCS,4.6
+MVN2026213,Pooja Yadav,Female,B.Sc IT,2026,67.9,79.4,91.6,83.0,0,2,React;Data Analysis;Machine Learning,,,0,Placed,Deloitte,5.6
+MVN2023214,Sahil Gupta,Male,B.Tech CSE,2023,78.6,65.2,62.5,100.0,0,0,Communication;Git;JavaScript;Excel;Java,AWS Cloud Practitioner;Data Analytics (Google);SQL Basics (HackerRank),,0,Placed,Wipro,2.9
+MVN2024215,Sneha Bansal,Female,B.Sc IT,2024,75.8,58.5,66.3,70.3,0,3,AWS;Git;React;Java,Data Analytics (Google),,0,Not Placed,,0
+MVN2026216,Sahil Sharma,Male,MCA,2026,85.9,79.2,75.4,90.0,0,1,Excel;Aptitude,Git & GitHub (Simplilearn);SQL Basics (HackerRank);Python for Everybody (Coursera),,0,Not Placed,,0
+MVN2025217,Priya Jain,Female,BCA (AI & ML),2025,71.5,85.3,66.8,85.6,0,2,Git;Aptitude,AWS Cloud Practitioner,PixelSoft,1,Not Placed,,0
+MVN2025218,Rohan Sharma,Male,BCA (AI & ML),2025,74.6,74.7,79.3,95.3,1,2,Communication;HTML/CSS;React;Flask;Power BI,Git & GitHub (Simplilearn);Power BI Essentials (Microsoft),DataWorks,1,Placed,Accenture,6.0
+MVN2026219,Anjali Sharma,Female,BCA,2026,65.6,61.6,66.4,60.3,0,2,AWS;Communication;Java;Aptitude;Excel;C++,Web Development (Udemy),PixelSoft,2,Placed,Zoho,3.2
+MVN2026220,Deepak Yadav,Male,B.Sc IT,2026,77.1,80.2,67.2,88.6,1,3,SQL;Flask;Excel;AWS;Communication;HTML/CSS;Java;JavaScript;Python,SQL Basics (HackerRank);Python for Everybody (Coursera);AWS Cloud Practitioner,CodeCraft Labs,1,Placed,Zoho,4.2
+MVN2024221,Isha Chauhan,Female,BCA (AI & ML),2024,76.8,69.5,68.3,96.1,1,3,HTML/CSS;Aptitude;Machine Learning;React,Machine Learning (Coursera);AWS Cloud Practitioner;Web Development (Udemy);SQL Basics (HackerRank),TechNova Solutions,6,Placed,Accenture,3.7
+MVN2026222,Kavya Singh,Female,BCA,2026,75.8,59.0,81.7,84.0,1,1,Communication;Data Analysis;React;AWS;Python,Machine Learning (Coursera);Java Programming (NPTEL),,0,Not Placed,,0
+MVN2023223,Karan Kumar,Male,MCA,2023,74.2,75.1,82.4,97.0,0,2,HTML/CSS;Aptitude;Communication,,TechNova Solutions,6,Placed,Deloitte,2.5
+MVN2025224,Karan Mehta,Male,MCA,2025,81.5,75.8,52.4,92.9,0,2,Git;Data Analysis;Java;HTML/CSS;Aptitude;Flask;Communication;C++,Java Programming (NPTEL);SQL Basics (HackerRank);Web Development (Udemy),InfoBridge,1,Placed,Deloitte,3.1
+MVN2024225,Neha Verma,Female,B.Sc IT,2024,65.5,66.2,67.9,85.9,0,3,HTML/CSS;Aptitude;Excel,,CloudNest,2,Not Placed,,0
+MVN2026226,Amit Singh,Male,B.Tech CSE,2026,86.0,65.9,74.4,78.7,1,0,Aptitude;Power BI;Machine Learning;Excel,Power BI Essentials (Microsoft);Git & GitHub (Simplilearn);Machine Learning (Coursera);Data Analytics (Google),PixelSoft,3,Placed,Accenture,8.3
+MVN2026227,Priya Chauhan,Female,MCA,2026,80.5,70.8,62.2,84.2,0,1,Excel;Python,Machine Learning (Coursera),,0,Not Placed,,0
+MVN2026228,Nikhil Singh,Male,B.Tech CSE,2026,91.3,68.0,66.3,82.2,0,2,AWS;Excel;Aptitude;Flask;Git;C++;Java;Python;SQL,Java Programming (NPTEL),InfoBridge,3,Placed,Deloitte,4.7
+MVN2024229,Simran Kumar,Female,B.Tech CSE,2024,86.6,66.5,54.7,100.0,0,0,SQL;Data Analysis;Java;JavaScript;Machine Learning;HTML/CSS;Excel;Python;Flask,AWS Cloud Practitioner;SQL Basics (HackerRank),,0,Placed,TCS,3.2
+MVN2024230,Arjun Tiwari,Male,B.Sc IT,2024,94.6,84.1,90.1,90.2,0,3,Communication;JavaScript,SQL Basics (HackerRank),CloudNest,1,Placed,Tech Mahindra,5.4
+MVN2024231,Amit Tiwari,Male,BCA (AI & ML),2024,74.0,70.3,61.8,75.5,1,3,AWS;C++;Data Analysis;Communication;SQL;Excel;Python,Git & GitHub (Simplilearn);Java Programming (NPTEL),,0,Not Placed,,0
+MVN2024232,Anjali Malik,Female,B.Sc IT,2024,62.6,70.1,84.8,72.8,0,1,Data Analysis;Aptitude;JavaScript;Machine Learning;Power BI;Java,,,0,Not Placed,,0
+MVN2026233,Amit Sharma,Male,BCA,2026,80.3,61.8,85.1,98.5,0,3,JavaScript;Excel;AWS;C++;SQL;Git,Machine Learning (Coursera);AWS Cloud Practitioner,PixelSoft,3,Placed,Accenture,5.6
+MVN2026234,Neha Rana,Female,B.Tech CSE,2026,70.3,82.9,60.4,98.8,0,1,C++;Power BI;Git;AWS;Java;React;Machine Learning;JavaScript;HTML/CSS,Data Analytics (Google),TechNova Solutions,1,Placed,HCL,4.0
+MVN2023235,Sahil Kumar,Male,B.Tech CSE,2023,56.3,75.2,71.4,78.5,0,2,C++;Git;Machine Learning;React;SQL;Communication;Excel,Web Development (Udemy),,0,Placed,Capgemini,2.8
+MVN2025236,Aarav Kumar,Male,MCA,2025,62.3,45.0,64.7,79.7,0,3,Aptitude;Git;HTML/CSS;Power BI,Python for Everybody (Coursera);SQL Basics (HackerRank);Web Development (Udemy),,0,Placed,Accenture,5.6
+MVN2026237,Kavya Rana,Female,BCA,2026,78.7,62.0,64.0,83.0,1,2,HTML/CSS;Flask;Communication,,,0,Not Placed,,0
+MVN2024238,Kavya Jain,Female,BCA (AI & ML),2024,65.2,63.7,68.0,77.7,0,3,HTML/CSS;AWS;JavaScript;Java;Power BI;Aptitude,Web Development (Udemy),,0,Placed,Tech Mahindra,4.8
+MVN2024239,Vivaan Yadav,Male,BCA,2024,71.3,71.8,84.9,72.5,0,0,Data Analysis;Excel;Communication;Git;SQL;React;Java;Aptitude,,PixelSoft,2,Not Placed,,0
+MVN2024240,Rahul Chauhan,Male,MCA,2024,81.4,69.2,78.8,80.7,2,0,Python;Aptitude;Excel;HTML/CSS;Java;React;C++;Flask;AWS,SQL Basics (HackerRank),,0,Placed,Deloitte,5.7
+MVN2023241,Aditya Verma,Male,BCA,2023,68.7,79.9,54.4,67.5,0,2,Excel;Communication;JavaScript;C++;React;Git;Power BI,,,0,Not Placed,,0
+MVN2024242,Karan Rana,Male,B.Tech CSE,2024,57.8,83.6,69.6,72.7,1,2,React;Power BI;Excel;C++;Aptitude;Data Analysis;Flask,SQL Basics (HackerRank);Git & GitHub (Simplilearn);Data Analytics (Google),,0,Not Placed,,0
+MVN2026243,Isha Kumar,Female,B.Sc IT,2026,74.6,76.3,59.8,86.9,0,3,Power BI;Git;C++;SQL;JavaScript;Aptitude;Java;Communication,Java Programming (NPTEL);Python for Everybody (Coursera),,0,Not Placed,,0
+MVN2025244,Aarav Tiwari,Male,BCA (AI & ML),2025,63.3,45.0,70.9,84.4,0,2,Git;JavaScript;Power BI;Python;SQL,SQL Basics (HackerRank),TechNova Solutions,1,Placed,Cognizant,4.7
+MVN2023245,Deepak Tiwari,Male,B.Sc IT,2023,94.6,72.2,76.2,72.7,1,2,JavaScript;React;AWS;Data Analysis;Communication;HTML/CSS;Machine Learning,Data Analytics (Google);SQL Basics (HackerRank),DataWorks,1,Placed,HCL,4.9
+MVN2023246,Arjun Singh,Male,B.Sc IT,2023,69.2,62.5,62.0,81.2,0,3,Java;Communication;Python;Git;React,Git & GitHub (Simplilearn);AWS Cloud Practitioner,InfoBridge,6,Placed,HCL,4.6
+MVN2023247,Mohit Bansal,Male,MCA,2023,58.4,80.8,67.1,79.2,0,2,Machine Learning;Java;JavaScript;Communication,Machine Learning (Coursera);Power BI Essentials (Microsoft),,0,Placed,Infosys,4.9
+MVN2026248,Ritu Tiwari,Female,MCA,2026,69.7,83.5,62.5,81.1,0,3,Data Analysis;Excel;React,Machine Learning (Coursera);Python for Everybody (Coursera),DataWorks,6,Not Placed,,0
+MVN2023249,Aarav Jain,Male,B.Tech CSE,2023,84.8,67.5,88.7,92.8,2,2,Data Analysis;Power BI,Power BI Essentials (Microsoft);SQL Basics (HackerRank),PixelSoft,2,Placed,Accenture,5.5
+MVN2023250,Vivaan Verma,Male,BCA (AI & ML),2023,67.6,82.3,61.5,76.7,0,3,Excel;Machine Learning;Communication;Git;Aptitude;JavaScript;C++;HTML/CSS;Data Analysis,Java Programming (NPTEL);SQL Basics (HackerRank),,0,Placed,Infosys,3.0
+MVN2023251,Vivaan Gupta,Male,B.Sc IT,2023,78.2,92.6,60.4,69.3,0,3,Machine Learning;Aptitude;Java;JavaScript;Excel;Data Analysis;AWS;Flask,Web Development (Udemy),CloudNest,2,Placed,Deloitte,3.5
+MVN2025252,Aditya Malik,Male,BCA (AI & ML),2025,73.2,76.5,84.1,69.4,2,2,SQL;Communication;Data Analysis;Power BI;Excel;Java,Git & GitHub (Simplilearn),DataWorks,1,Placed,Capgemini,7.1
+MVN2024253,Pooja Mehta,Female,BCA,2024,99.0,77.8,81.9,83.3,0,3,Excel;React;C++;AWS;Python;Machine Learning;Communication;SQL;HTML/CSS,Web Development (Udemy),CodeCraft Labs,1,Placed,HCL,3.6
+MVN2025254,Pooja Chauhan,Female,BCA,2025,75.7,85.2,67.0,69.9,0,3,HTML/CSS;SQL,Python for Everybody (Coursera);AWS Cloud Practitioner;Git & GitHub (Simplilearn),,0,Placed,TCS,2.7
+MVN2025255,Neha Tiwari,Female,B.Sc IT,2025,67.9,85.0,48.8,79.8,0,1,C++;Machine Learning;Flask;Python;HTML/CSS;SQL;JavaScript,Java Programming (NPTEL);Machine Learning (Coursera),TechNova Solutions,6,Placed,Deloitte,2.9
+MVN2024256,Aarav Tiwari,Male,MCA,2024,71.6,68.3,75.5,76.1,0,3,JavaScript;Python;React;Communication;SQL,Python for Everybody (Coursera);Web Development (Udemy),PixelSoft,6,Placed,Zoho,4.9
+MVN2025257,Aditya Rana,Male,BCA,2025,89.2,82.0,82.2,75.7,0,4,Flask;React;Aptitude;Python;C++,SQL Basics (HackerRank);Python for Everybody (Coursera),,0,Placed,Zoho,5.6
+MVN2026258,Vivaan Saini,Male,B.Sc IT,2026,62.2,83.9,73.2,75.4,0,3,C++;Data Analysis;Java;Machine Learning;Aptitude;Power BI;React;AWS;Python,Power BI Essentials (Microsoft),TechNova Solutions,3,Placed,Accenture,4.7
+MVN2025259,Kavya Verma,Female,B.Tech CSE,2025,69.3,80.7,75.9,66.5,0,2,Power BI;Flask;JavaScript;SQL;Java;Git;C++,SQL Basics (HackerRank);Power BI Essentials (Microsoft);Python for Everybody (Coursera),CloudNest,6,Placed,Capgemini,4.9
+MVN2025260,Anjali Verma,Female,B.Tech CSE,2025,79.1,73.8,63.2,83.5,1,2,Excel;Git;SQL,Data Analytics (Google),CloudNest,1,Not Placed,,0
+MVN2023261,Komal Jain,Female,BCA (AI & ML),2023,71.6,78.7,74.1,99.0,0,2,Java;SQL;AWS;HTML/CSS;C++;Aptitude,Web Development (Udemy);AWS Cloud Practitioner,,0,Placed,HCL,6.5
+MVN2025262,Neha Bansal,Female,B.Sc IT,2025,52.3,80.5,68.8,74.6,0,4,Python;React;AWS;Flask,Git & GitHub (Simplilearn);Machine Learning (Coursera),PixelSoft,1,Placed,TCS,2.5
+MVN2024263,Simran Gupta,Female,BCA,2024,69.6,77.1,77.1,77.4,1,3,Java;AWS,Machine Learning (Coursera);Power BI Essentials (Microsoft);SQL Basics (HackerRank),,0,Not Placed,,0
+MVN2025264,Isha Singh,Female,BCA,2025,68.6,80.1,80.9,83.7,0,1,C++;Python;Java;SQL;Power BI;Flask,SQL Basics (HackerRank);Web Development (Udemy);Python for Everybody (Coursera),DataWorks,6,Placed,HCL,4.6
+MVN2023265,Isha Yadav,Female,BCA (AI & ML),2023,71.0,80.0,69.8,63.8,0,1,Git;Flask;Python;React;Power BI;Aptitude;C++;HTML/CSS,Power BI Essentials (Microsoft),PixelSoft,6,Placed,Wipro,4.0
+MVN2024266,Nikhil Tiwari,Male,BCA,2024,73.0,70.3,87.1,80.7,0,3,Data Analysis;Flask;React;Machine Learning;Communication,,PixelSoft,2,Placed,Accenture,3.2
+MVN2026267,Aarav Kumar,Male,BCA (AI & ML),2026,76.4,81.8,60.7,85.0,2,2,Python;React;Git;Excel;HTML/CSS,Data Analytics (Google),InfoBridge,3,Not Placed,,0
+MVN2026268,Rohan Verma,Male,B.Sc IT,2026,67.5,53.7,76.8,85.1,2,2,Python;HTML/CSS;Data Analysis;SQL,,,0,Not Placed,,0
+MVN2025269,Vivaan Sharma,Male,BCA,2025,87.1,88.4,86.1,87.4,0,2,Excel;Git;Data Analysis;SQL;C++;Java;Communication;AWS;JavaScript,Python for Everybody (Coursera);Machine Learning (Coursera),,0,Placed,Zoho,5.5
+MVN2026270,Anjali Mehta,Female,B.Sc IT,2026,95.7,70.2,61.6,81.2,0,2,HTML/CSS;SQL;Data Analysis;Aptitude,Web Development (Udemy);Python for Everybody (Coursera);Git & GitHub (Simplilearn),,0,Placed,Deloitte,6.0
+MVN2024271,Isha Verma,Female,MCA,2024,75.9,64.6,63.8,66.8,0,0,Aptitude;Machine Learning;JavaScript;C++;Flask,,CloudNest,2,Not Placed,,0
+MVN2023272,Rahul Saini,Male,MCA,2023,59.9,71.2,63.1,65.0,0,2,Python;HTML/CSS;Data Analysis;SQL;C++;Communication;Excel;Power BI;Aptitude,,,0,Placed,Accenture,3.3
+MVN2024273,Rahul Mehta,Male,BCA,2024,66.5,75.2,66.9,93.4,0,1,C++;HTML/CSS;Excel;Power BI;React;Data Analysis;Java,Web Development (Udemy),PixelSoft,2,Placed,Deloitte,4.1
+MVN2026274,Rohan Gupta,Male,B.Tech CSE,2026,76.1,64.5,76.7,76.8,0,3,HTML/CSS;Excel;Machine Learning;Communication;Data Analysis;Aptitude;SQL,Power BI Essentials (Microsoft);AWS Cloud Practitioner,DataWorks,3,Placed,Cognizant,3.4
+MVN2024275,Anjali Bansal,Female,BCA (AI & ML),2024,73.4,64.9,89.0,64.9,0,2,Git;AWS,Python for Everybody (Coursera);Power BI Essentials (Microsoft);Java Programming (NPTEL);Data Analytics (Google),,0,Placed,Capgemini,5.8
+MVN2024276,Rahul Verma,Male,MCA,2024,58.2,81.0,75.1,75.2,0,0,Aptitude;C++;HTML/CSS,Machine Learning (Coursera);Web Development (Udemy),,0,Not Placed,,0
+MVN2024277,Karan Tiwari,Male,BCA,2024,83.0,69.3,86.1,71.1,0,1,Communication;Python;JavaScript;SQL;Git;Java;HTML/CSS,SQL Basics (HackerRank),,0,Placed,Zoho,4.9
+MVN2023278,Vivaan Bansal,Male,B.Tech CSE,2023,72.7,72.8,60.1,77.8,2,2,AWS;C++;React;Flask;Aptitude;HTML/CSS;Machine Learning;Excel;Java,Machine Learning (Coursera);Power BI Essentials (Microsoft);Git & GitHub (Simplilearn),InfoBridge,1,Not Placed,,0
+MVN2025279,Riya Tiwari,Female,BCA,2025,88.1,71.0,59.1,80.2,0,4,Machine Learning;Java;Communication;HTML/CSS;C++;React;Excel,Git & GitHub (Simplilearn);SQL Basics (HackerRank),InfoBridge,6,Placed,Infosys,3.1
+MVN2023280,Nikhil Tiwari,Male,B.Tech CSE,2023,67.9,75.6,72.9,68.6,0,2,AWS;C++;Python;Java,Machine Learning (Coursera),TechNova Solutions,3,Placed,Capgemini,5.9
+MVN2025281,Arjun Singh,Male,B.Sc IT,2025,55.2,66.5,68.7,80.9,0,2,SQL;Python;React;Data Analysis;Machine Learning,Power BI Essentials (Microsoft);Python for Everybody (Coursera);Git & GitHub (Simplilearn),PixelSoft,1,Placed,Zoho,5.3
+MVN2025282,Simran Chauhan,Female,MCA,2025,83.7,76.3,61.3,73.5,0,1,React;Java;Python;SQL;C++;Power BI;JavaScript;Communication;Flask,Java Programming (NPTEL);AWS Cloud Practitioner;Machine Learning (Coursera),CloudNest,3,Placed,Wipro,2.7
+MVN2023283,Deepak Tiwari,Male,MCA,2023,67.3,85.9,80.0,77.5,1,3,HTML/CSS;Aptitude;React;Communication;C++;Flask;Python;JavaScript,Java Programming (NPTEL),DataWorks,3,Placed,Infosys,5.2
+MVN2023284,Nikhil Malik,Male,BCA (AI & ML),2023,81.9,54.5,78.1,93.0,0,2,C++;Power BI;HTML/CSS,AWS Cloud Practitioner;Machine Learning (Coursera);Java Programming (NPTEL),TechNova Solutions,6,Not Placed,,0
+MVN2026285,Rahul Chauhan,Male,MCA,2026,69.9,60.9,59.1,77.9,2,1,Flask;Aptitude;JavaScript;Java;React;Python;Machine Learning;Data Analysis;C++,,,0,Not Placed,,0
+MVN2024286,Simran Jain,Female,BCA (AI & ML),2024,68.4,69.9,84.0,63.2,0,2,React;C++;Python;Aptitude;Java,AWS Cloud Practitioner;Machine Learning (Coursera);Git & GitHub (Simplilearn);Web Development (Udemy),CloudNest,3,Placed,Zoho,6.7
+MVN2025287,Deepak Yadav,Male,BCA,2025,68.1,71.7,57.7,82.8,0,1,Git;Machine Learning;React,Java Programming (NPTEL);Data Analytics (Google),,0,Not Placed,,0
+MVN2023288,Manish Malik,Male,MCA,2023,79.5,72.1,69.9,75.6,0,1,SQL;React;C++;AWS;Data Analysis;Excel;Power BI;Java,SQL Basics (HackerRank);Java Programming (NPTEL);AWS Cloud Practitioner;Data Analytics (Google),,0,Placed,Wipro,6.4
+MVN2026289,Sneha Malik,Female,B.Sc IT,2026,90.0,77.6,67.4,77.0,0,4,Aptitude;Data Analysis;Communication;Flask;Python;C++;JavaScript;React,,,0,Placed,Accenture,5.5
+MVN2026290,Priya Mehta,Female,BCA,2026,85.7,75.7,66.7,78.9,0,1,Power BI;Excel;SQL;Python;Communication;Flask;JavaScript;HTML/CSS,,,0,Placed,Wipro,2.5
+MVN2025291,Aarav Chauhan,Male,B.Sc IT,2025,75.4,89.3,58.1,100.0,1,3,Aptitude;AWS;Excel;Power BI;Java;SQL,,,0,Not Placed,,0
+MVN2026292,Amit Rana,Male,B.Sc IT,2026,66.1,65.8,64.6,78.3,0,4,AWS;Data Analysis;Power BI;Java;SQL;Flask,AWS Cloud Practitioner,,0,Not Placed,,0
+MVN2025293,Amit Saini,Male,BCA,2025,81.5,61.3,50.2,82.4,0,2,C++;JavaScript;Excel;Machine Learning,Git & GitHub (Simplilearn),,0,Not Placed,,0
+MVN2023294,Ritu Tiwari,Female,BCA (AI & ML),2023,85.0,91.6,67.1,67.7,0,0,React;AWS;Python;SQL;Communication,Web Development (Udemy),,0,Not Placed,,0
+MVN2025295,Pooja Yadav,Female,B.Sc IT,2025,59.0,74.5,96.4,84.7,0,3,Git;Power BI;Java;Communication;Python;SQL;HTML/CSS;Flask;Machine Learning,,,0,Placed,Accenture,4.9
+MVN2025296,Rohan Tiwari,Male,B.Sc IT,2025,76.7,68.6,66.1,86.2,2,1,Machine Learning;Excel;AWS;Communication,,PixelSoft,1,Not Placed,,0
+MVN2024297,Priya Jain,Female,MCA,2024,73.7,83.3,73.8,79.5,0,1,Flask;Power BI;SQL;Communication;AWS,AWS Cloud Practitioner,,0,Not Placed,,0
+MVN2023298,Riya Jain,Female,B.Tech CSE,2023,68.0,85.7,63.5,58.6,0,3,HTML/CSS;Data Analysis;Git;Python,Java Programming (NPTEL),,0,Placed,Accenture,2.5
+MVN2025299,Komal Yadav,Female,B.Tech CSE,2025,76.9,77.2,69.5,86.5,0,4,Excel;Flask;JavaScript;SQL;Communication;AWS;Machine Learning;React,Python for Everybody (Coursera);Web Development (Udemy),,0,Placed,Tech Mahindra,4.1
+MVN2025300,Isha Verma,Female,B.Sc IT,2025,72.1,83.3,68.5,85.9,0,4,Aptitude;Java;HTML/CSS,Web Development (Udemy);Java Programming (NPTEL);Power BI Essentials (Microsoft);Git & GitHub (Simplilearn),,0,Not Placed,,0

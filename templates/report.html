@@ -1,0 +1,10 @@
+{% extends "base.html" %}{% block title %}Reports{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3"><h3 class="mb-0">Placement Summary Report</h3>
+ <div class="d-flex gap-2"><a class="btn btn-outline-primary" href="{{ url_for('export_csv') }}">Download CSV</a><button class="btn btn-outline-secondary" onclick="window.print()">Print</button></div></div>
+{% if overall and not overall.empty %}<div class="panel mb-3"><b>Overall:</b> {{ overall.total }} students &middot; {{ overall.placed }} placed ({{ overall.rate }}%) &middot; avg degree {{ overall.avg_marks }}% &middot; avg package {{ overall.avg_package }} LPA</div>{% endif %}
+<div class="panel p-0 table-responsive"><table class="table table-striped mb-0">
+ <thead class="table-light"><tr><th>Course</th><th>Batch</th><th>Students</th><th>Placed</th><th>Placement %</th><th>Avg degree %</th><th>Avg attendance %</th><th>Avg package (LPA)</th></tr></thead>
+ <tbody>{% for r in table %}<tr><td>{{ r.course }}</td><td>{{ r.batch }}</td><td>{{ r.total }}</td><td>{{ r.placed }}</td><td>{{ r.rate }}</td><td>{{ r.marks }}</td><td>{{ r.att }}</td><td>{{ r.pkg if r.pkg is not none else '-' }}</td></tr>
+ {% else %}<tr><td colspan="8" class="text-center text-muted py-4">No data.</td></tr>{% endfor %}</tbody></table></div>
+{% endblock %}
